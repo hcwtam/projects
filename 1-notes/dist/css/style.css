@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(241, 231, 217);
+    padding: 0;
+    margin: 0;
+    font-family: 'Kalam', cursive;
+}
+
+.note-wrapper {
+    padding: 50px;
+}
+
+.new-note-btn {
+    display: block;
+    margin: 0 auto 50px;
+    width: 200px;
+    padding: 10px 30px;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Kalam', cursive;
+    font-size: 24px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+
+.new-note-btn:hover {
+    box-shadow: 1px 3px 5px rgb(0, 0, 0, 0.2);
+}
+
+.new-note-btn:active {
+    position: relative;
+    top: 1px;
+}
+
+.notes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.note {
+    background-color: rgb(248, 220, 60);
+    width: 320px;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px rgb(0, 0, 0, 0.2);
+    transition: all 0.5s;
+}
+
+.note:hover {
+    box-shadow: 2px 4px 10px rgb(0, 0, 0, 0.3);
+}
+
+.note-close {
+    float: right;
+    margin: 5px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    line-height: 24px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.note-close:hover {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+.note-close:focus {
+    box-shadow: inset 2px 3px 0px rgb(0, 0, 0, 0.2);
+}
+
+.note-title {
+    font-size: 24px;
+    padding: 10px 16px;
+    font-weight: bold;
+}
+
+.note-body {
+    font-size: 20px;
+    padding: 10px 16px 16px;
+}
