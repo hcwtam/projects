@@ -1,0 +1,125 @@
+body {
+    font: normal x-small verdana, arial, helvetica, sans-serif;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    white-space: nowrap;
+    text-transform: uppercase;
+    display: flex;
+    border-bottom: 1px grey solid;
+
+}
+
+.bottom {
+    white-space: nowrap;
+    display: flex;
+    background-color: rgb(202, 226, 248);
+    border-bottom: 1px rgb(92, 158, 180) solid;
+
+}
+
+.down {
+    align-items: flex-end;
+    
+}
+
+.down li {
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0px 3px;
+    padding: 0 5px;
+    background-color: rgb(238, 244, 252);
+}
+
+.down li:first-child {
+    color: orangered;
+    border: 1px rgb(92, 158, 180) solid;
+    border-bottom: 1px solid rgb(238, 244, 252);
+}
+
+.down li .choice:link {
+    color: orangered;
+}
+
+.down li .choice:visited {
+    color: orangered;
+}
+
+.down li a:link {
+    color: rgb(49, 102, 134);
+}
+
+.down li a:visited {
+    color: rgb(49, 102, 134);
+}
+
+.down li a:hover {
+    text-decoration: none;
+}
+
+.down li a:active {
+    color: orangered;
+    border: 1px rgb(92, 158, 180) solid;
+    border-bottom: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+select {
+    text-transform: uppercase;
+    font: normal x-small verdana, arial, helvetica, sans-serif;
+    border: none;
+    height: 13px;
+}
+
+option {
+    text-transform: uppercase;
+    font: normal x-small verdana, arial, helvetica, sans-serif;
+    font-size: 11px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:focus {
+    border: 1px black solid;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.seperator {
+    color: grey;
+    padding-left: 2px;
+}
+
+.choice:link {
+    color: orangered;
+    font-weight: bold;
+}
+
+.image {
+    padding: 0;
+    margin: 2px 20px 1px 3px;
+}

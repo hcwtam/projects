@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+nav {
+    background-image: url("background.jpg");
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    padding: 20px 20px;
+    margin: 0;
+    margin-right: 60px;
+    background: red;
+    border-radius: 10px;
+}
+
+img {
+    height: 70px;
+    width: 130px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;  
+    transition: color 400ms;
+}
+
+li:hover {
+    background-color: black;
+}

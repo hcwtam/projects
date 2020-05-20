@@ -1,0 +1,13 @@
+div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: darkorange;
+}
+
+button {
+    flex: 1 auto;
+    margin: 5px;
+    line-height: 1.5;
+    font-size: 14px;
+}
