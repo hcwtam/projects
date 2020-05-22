@@ -5,7 +5,7 @@ const elements = {
     increase: document.querySelector('.increase')
 }
 
-let i = [0];
+let i = 0;
 
 const colorChange = ()=> {
     let number = parseInt(elements.counter.textContent);
@@ -15,19 +15,19 @@ const colorChange = ()=> {
 }
 
 elements.increase.onclick = ()=> {
-    i[0] = i[0] + 1;
-    elements.counter.textContent = i[0];
+    i++;
+    elements.counter.textContent = i;
     colorChange();
 }
 
 elements.decrease.onclick = ()=> {
-    i[0] = i[0] - 1;
-    elements.counter.textContent = i[0];
+    i--;
+    elements.counter.textContent = i;
     colorChange();
 }
 
 elements.reset.onclick = ()=> {
-    i[0] = 0;
-    elements.counter.textContent = i[0];
+    i = 0;
+    elements.counter.textContent = i;
     colorChange();
 }
