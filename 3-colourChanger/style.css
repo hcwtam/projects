@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: calc(100vh - 3rem);
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.display {
+    border: solid 1px rgb(0, 0, 0);
+    background-color: black;
+    padding: 25px 15px;
+    margin: 20px;
+    border: 3px solid black;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    
+}
+
+.value {
+    color: rgb(87, 97, 241);
+    letter-spacing: 2px;
+}
+
+.btn {
+    border: solid 1px black;
+    margin: 30px;
+    padding: 15px 15px;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: all 0.3s;
+    border: solid 2px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(0, 0, 0, 0.8);
+    color: white;
+}
+
