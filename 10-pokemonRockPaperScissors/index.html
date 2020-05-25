@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Battle: Rock Paper Scissors</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <!-- extra fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scores">
+      <div class="score1"><img src="images/pokeball.png" class="health1-0" alt="health"><img src="images/pokeball.png" class="health1-1" alt="health"><img src="images/pokeball.png" class="health1-2" alt="health"><img src="images/pokeball.png" class="health1-3" alt="health"><img src="images/pokeball.png" class="health1-4" alt="health"><img src="images/pokeball.png" class="health1-5" alt="health"></div>
+      <div class="score1"><img src="images/pokeball.png" class="health2-5" alt="health"><img src="images/pokeball.png" class="health2-4" alt="health"><img src="images/pokeball.png" class="health2-3" alt="health"><img src="images/pokeball.png" class="health2-2" alt="health"><img src="images/pokeball.png" class="health2-1" alt="health"><img src="images/pokeball.png" class="health2-0" alt="health"></div>
+    </div>
+    <div class="container">
+      <div class="pokemon1">
+        <img src="images/bulbasaur.png" alt="grass type" class="poke1">
+        <img src="images/charmander.png" alt="fire type" class="poke2">
+        <img src="images/squirtle.png" alt="water type" class="poke3">
+      </div>
+      <div class="stage">
+        <div class="choice1"><img src="images/bulbasaur.png" alt="grass type"></div>
+        <div class="choice2"><img src="images/mudkip.png" alt="water type"></div>
+      </div>
+      <div class="pokemon2">
+        <img src="images/treecko.png" alt="grass type" class="poke7">
+        <img src="images/torchic.png" alt="fire type" class="poke8">
+        <img src="images/mudkip.png" alt="water type" class="poke9">
+      </div>
+    </div>
+
+        <!-- winner modal -->
+        <div class="modal-overlay">
+          <div class="modal-container">
+            <p class="winner-text"></p>
+            <button class="close-btn"><i class="fas fa-times"></i></button>
+          </div>
+        </div>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>

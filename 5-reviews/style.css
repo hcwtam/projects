@@ -98,3 +98,7 @@ img {
   color: var(--clr-primary-5);
 }
 
+.grey {
+    filter: grey;
+}
+
