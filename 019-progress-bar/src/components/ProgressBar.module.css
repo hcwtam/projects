@@ -1,0 +1,35 @@
+.ProgressBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.Background {
+    width: 480px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px rgb(139, 139, 139);
+}
+
+.BarBackground {
+    
+    width: 400px;
+    height: 30px;
+    background-color: rgb(207, 207, 207);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.Check {
+    color: rgb(207, 207, 207);
+    font-size: 28px;
+    font-weight: bolder;
+    margin: 4px 25px 4px 0px;
+}
