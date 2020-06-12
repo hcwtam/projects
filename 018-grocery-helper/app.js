@@ -20,7 +20,7 @@ form.addEventListener('submit',addItem);
 clearBtn.addEventListener('click',clearItems);
 
 // load items
-window.addEventListener('load',setupItems);
+window.addEventListener('loadom',setupItems);
 
 // FUNCTIONS
 function addItem(e) {
