@@ -1,0 +1,31 @@
+.Face {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.LeftEye {
+    position: relative;
+    top: 176px;
+    right: 65px;
+    width: 19px;
+    height: 27px;
+    border-radius: 48%;
+    background-color: #40C9F5;
+    transform: rotate(10deg);
+}
+
+.RightEye {
+    position: relative;
+    top: 160px;
+    left: 50px;
+    width: 19px;
+    height: 27px;
+    border-radius: 48%;
+    background-color: #40C9F5;
+    transform: rotate(10deg);
+}
