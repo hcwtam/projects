@@ -1,0 +1,19 @@
+.Bar {
+    margin-top: 25px;
+    font-size: 14px; 
+}
+
+i {
+    margin: 0 3px;
+}
+
+span {
+    border-radius: 3px;
+    padding: 3px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+span:hover {
+    background-color: rgb(236, 236, 236);
+}

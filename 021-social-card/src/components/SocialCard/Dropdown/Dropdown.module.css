@@ -1,0 +1,28 @@
+.Dropdown {
+    font-size: 24px;
+    color: grey;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.Menu {
+    box-shadow: 1px 1px 2px grey;
+    color: grey;
+    border-radius: 3px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background-color: white;
+}
+
+.Menu div {
+    width: 100px;
+    padding: 10px;
+    border-top: rgb(231, 231, 231) 1px solid;
+}
+
+.Menu div:hover {
+    background-color: rgb(208, 237, 255);
+}
