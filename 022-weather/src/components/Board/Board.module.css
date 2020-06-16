@@ -1,0 +1,17 @@
+.Board {
+    width: 100%;
+    text-align: start;
+    color: grey;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.Board > div {
+    margin: 10px 80px 10px 20px;
+}
+
+i {
+    font-size: 60px;
+    margin: 30px 20px 0;
+}
