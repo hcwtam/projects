@@ -9,9 +9,9 @@ const WeatherCard = (props) => {
     return (
         <div 
             className={props.isActive ? `${styles.WeatherCard} ${styles.active}` : styles.WeatherCard} onClick={props.clicked} >
-            <div style={{fontSize: 16}}>{weather.weekday}</div>
-            <i className={`fas fa-sun`} />
-            <div><span style={{color: 'grey'}}>{weather.max}°</span><span>{weather.min}°</span></div>
+            <div style={{fontSize: 16}}>{weather.weekday.slice(0,3)}</div>
+            <i className={`fas fa-${weather.icon}`} />
+            <div><span>{weather.max}°</span><span>{weather.min}°</span></div>
         </div>
     );
 };

@@ -4,12 +4,9 @@ import WeatherCard from './WeatherCard/WeatherCard';
 import styles from './WeatherCards.module.css';
 
 const WeatherCards = props => {
-    const weathers = props.weathers;
-
-
-    const weatherCards = weathers.map((el, i) => {
+    const weatherCards = props.weathers.map((el, i) => {
         return (
-            <React.Fragment key={el.day}>
+            <React.Fragment key={el.weekday}>
                 <WeatherCard 
                     weather={el} 
                     isActive={props.index === i ? true : false} 

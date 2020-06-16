@@ -8,13 +8,12 @@ const Board = (props) => {
         <div className={styles.Board}>
             <div>
                 <div style={{fontSize: 24}}>Hong Kong</div>
-                <div>{weather.weekday} 4:00 pm</div>
-                <div>{weather}</div>
-                <i className='fas fa-cloud-sun' />
+                <div>{weather.weekday}</div>
+                <div>{weather.description}</div>
+                <i className={`fas fa-${weather.icon}`} />
                 <div style={{
                     display: 'inline-block', 
-                    fontSize: 60, 
-                    color: 'black'}}>{weather.temp}°</div>
+                    fontSize: 60}}>{weather.temp}°</div>
             </div>
             <div style={{marginBottom: 20}}>
                 <div>Feels like: {weather.feelsLike}°</div>

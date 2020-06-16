@@ -1,7 +1,7 @@
 .Board {
     width: 100%;
     text-align: start;
-    color: grey;
+    color: white;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
