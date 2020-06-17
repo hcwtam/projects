@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="Calculator"
+  >
+    <div
+      className="Display"
+    >
+      <div
+        style={
+          Object {
+            "fontSize": 60,
+            "padding": "60px 40px 10px",
+          }
+        }
+      >
+        0
+      </div>
+      <div
+        style={
+          Object {
+            "padding": "20px 40px",
+          }
+        }
+      >
+        
+      </div>
+    </div>
+    <div
+      className="Numpad"
+    >
+      <div
+        className="Top"
+        onClick={[Function]}
+      >
+        C
+      </div>
+      <div
+        className="Top"
+        onClick={[Function]}
+      >
+        (
+      </div>
+      <div
+        className="Top"
+        onClick={[Function]}
+      >
+        )
+      </div>
+      <div
+        className="Ops"
+        onClick={[Function]}
+      >
+        ÷
+      </div>
+      <div
+        onClick={[Function]}
+      >
+        7
+      </div>
+      <div
+        onClick={[Function]}
+      >
+        8
+      </div>
+      <div
+        onClick={[Function]}
+      >
+        9
+      </div>
+      <div
+        className="Ops"
+        onClick={[Function]}
+      >
+        ×
+      </div>
+      <div
+        onClick={[Function]}
+      >
+        4
+      </div>
+      <div
+        onClick={[Function]}
+      >
+        5
+      </div>
+      <div
+        onClick={[Function]}
+      >
+        6
+      </div>
+      <div
+        className="Ops"
+        onClick={[Function]}
+      >
+        −
+      </div>
+      <div
+        onClick={[Function]}
+      >
+        1
+      </div>
+      <div
+        onClick={[Function]}
+      >
+        2
+      </div>
+      <div
+        onClick={[Function]}
+      >
+        3
+      </div>
+      <div
+        className="Ops"
+        onClick={[Function]}
+      >
+        +
+      </div>
+      <div
+        className="Zero"
+        onClick={[Function]}
+      >
+        0
+      </div>
+      <div
+        onClick={[Function]}
+      >
+        .
+      </div>
+      <div
+        className="Ops Equal"
+        onClick={[Function]}
+      >
+        =
+      </div>
+    </div>
+  </div>
+</div>
+`;
