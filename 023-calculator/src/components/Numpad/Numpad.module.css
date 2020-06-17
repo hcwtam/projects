@@ -1,0 +1,53 @@
+.Numpad {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 36px;
+}
+
+.Numpad div{
+    width: 25%;
+    height: 20%;
+    border: 1px solid rgba(43, 43, 43, 0.1);
+    transition: all 0.3s ease-in;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Numpad div:hover,
+.Numpad div:active {
+    background-color: rgba(72, 255, 255, 0.8);
+    color: rgba(81, 106, 126, 0.473);
+}
+
+.Ops {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.Top {
+    background-color: rgba(82, 82, 82, 0.4);
+}
+
+.Numpad .Zero {
+    border-radius: 0 0 0 20px;
+    width: 50%;
+}
+
+.Numpad .Equal {
+    border-radius: 0 0 20px 0;
+}
+
+@media (max-width: 460px) {
+    .Numpad {
+        width: 100%;
+        height: 70%;
+        border-radius: 0;
+    }
+    .Numpad .Zero,
+    .Numpad .Equal {
+        border-radius: 0;
+    }
+}
