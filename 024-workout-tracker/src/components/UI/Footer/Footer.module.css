@@ -1,0 +1,17 @@
+.Footer {
+    width: 100vw;
+    height: 60px;
+    background-color: white;
+    border-top: 2px solid rgb(190, 190, 190);
+    position: absolute;
+    bottom: 0;
+}
+
+.border {
+    width: 100vw;
+    height: 5px;
+    background: linear-gradient(180deg, rgba(191,191,191,1) 0%, rgb(255, 255, 255) 100%);
+    position: absolute;
+    bottom: 60px;
+    
+}

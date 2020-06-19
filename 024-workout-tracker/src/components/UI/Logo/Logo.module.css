@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@800&display=swap');
+
+.Logo {
+  font-family: 'Catamaran', sans-serif;
+  color: grey;
+  margin: 5% 0;
+  font-size: 8vw
+}
+
+.Logo span {
+  color: rgb(89, 219, 198);
+}

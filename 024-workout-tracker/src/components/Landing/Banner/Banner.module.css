@@ -1,0 +1,42 @@
+.BannerTop {
+    width: 100vw;
+    height: 15vh;
+    position: absolute;
+    top: 0;
+}
+
+.BannerBottom {
+    width: 100vw;
+    height: 15vh;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.top {
+    background-color: grey;
+    height:25%;
+}
+.BannerTop.active > .top,
+.BannerBottom.active > .top{
+    background-color: #db7559c4;
+}
+
+.middle {
+    background-color: rgb(163, 163, 163);
+    height:25%;
+}
+
+.bottom {
+    background-color: rgb(209, 209, 209);
+    height:25%;
+}
+.BannerTop.active > .bottom,
+.BannerBottom.active > .bottom{
+    background-color: rgba(89, 219, 197, 0.8);
+}
+
+.white {
+    background-color: rgb(255, 255, 255);
+    height:25%;
+}

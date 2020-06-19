@@ -1,0 +1,41 @@
+.Landing {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dumbbellContainer {
+    margin-left: 10;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 950px) {
+    .dumbbellContainer {
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .dumbbellContainer {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .dumbbellContainer {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .dumbbellContainer {
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 1800px) {
+    .dumbbellContainer {
+        margin-bottom: 0px;
+    }
+}
