@@ -1,0 +1,16 @@
+.Select {
+    text-align: center;
+    background-color: rgb(47, 177, 177);
+    height: 100vh;
+}
+
+.question {
+font-size: 32px;
+color: white;
+margin: 20vh auto 5vh;
+}
+
+.button {
+    display: inline-block;
+    margin: 5vh 2vw;
+}

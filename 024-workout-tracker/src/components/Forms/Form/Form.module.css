@@ -1,0 +1,28 @@
+.Form {
+    width: 98.5%;
+    min-height: 40px;
+    margin: 10px auto;
+    background: linear-gradient(90deg, rgba(33,124,124,1) 0%,rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(33,124,124,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.sets {
+    margin: 5px 5% 5px 0px;
+    padding: 0px 20px;
+    border-radius: 15px;
+    background-color: var(--colorShadeB);
+    height: 35px;
+    width: 70%;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    text-shadow: 0 0 1px rgba(216, 216, 216, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

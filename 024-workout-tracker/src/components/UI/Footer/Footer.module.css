@@ -15,3 +15,61 @@
     bottom: 60px;
     
 }
+
+.back {
+    color: white;
+    font-size: 18px;
+    background-color: rgb(153, 153, 153);
+    border-bottom-right-radius: 30px;
+    border-bottom: 2px solid grey;
+    height: 30px;
+    width: 200px;
+    padding-left: 30px;
+    text-transform: capitalize;
+    cursor: pointer;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    bottom: -15px;
+    left: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgb(180, 180, 180) 0%, rgb(153, 153, 153) 50%, rgb(121, 121, 121) 100%);  
+}
+
+.dumbbell {
+    color: white;
+    font-size: 18px;
+    background-color: rgb(47, 177, 177);
+    border-bottom-left-radius: 20px;
+    border-bottom: 5px solid rgb(255, 196, 0);
+    height: 40px;
+    width: 200px;
+    padding-left: 30px;
+    text-transform: capitalize;
+    position: absolute;
+    right: 0;
+    bottom: 18px;
+}
+
+.dumbbellContainer {
+    position: absolute;
+    width: 66px;
+    height: 99px;
+    bottom: 10px;
+    right: 65px;
+    z-index: 3;
+}
+
+@media (max-height: 550px) {
+    .Footer {
+        top: 100%;
+    }
+}

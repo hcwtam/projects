@@ -1,0 +1,75 @@
+.DumbbellSmall {
+    width: 24px;
+    height: 36px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: relative;
+    
+}
+
+.top {
+    width: 20px;
+    height: 10%;
+    border-radius: 3px 3px 0 0;
+    background-color: rgb(255, 166, 0);
+    z-index: 1;
+    transition: all 0.1s;
+}
+
+.faceContainer {
+    width: 60%;
+    height: 50%;
+    float: left;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(214, 214, 214);
+    transition: all 0.1s;
+}
+
+.face {
+    width: 65%;
+    height: 55%;
+    background-image: url('./face.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bell {
+    width: 100%;
+    height: 25%;
+    border-radius: 10%;
+    background-color: #db7559;
+    z-index: 1;
+}
+
+
+.bar {
+    width: 60%;
+    height: 30%;
+    background-color: grey;
+    z-index: 1;
+}
+
+.bottom {
+    width: 70%;
+    height: 10%;
+    border-radius: 0 0 20% 20%;
+    background-color: rgb(255, 166, 0);
+}
+
+.light {
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 50%;
+    height: 100%;
+    float: left;;
+}
+
+.active {
+    transform: translateY(-10px);
+}

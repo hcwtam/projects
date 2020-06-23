@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './Button.module.css';
 
-const Button = (props) => {
+const ButtonSmall = (props) => {
     let buttonStyle = styles.Button;
     if (props.success) buttonStyle = [styles.Button, styles.success].join(' ');
     if (props.fail) buttonStyle = [styles.Button, styles.fail].join(' ');
@@ -16,4 +16,4 @@ const Button = (props) => {
         onClick={() => props.clicked && props.clicked(props.children)}>{props.children}</button>
 )};
 
-export default Button;
+export default ButtonSmall;

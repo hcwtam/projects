@@ -5,11 +5,11 @@
     position: relative;
     overflow:hidden;
     z-index: 1;
-    font-size: 80px;
+    font-size: 2vw;
 }
 
 .Home:before{
-    position:absolute;
+    position: absolute;
     left:0;
     top:75px;
     content: url(../../assets/background.png);
@@ -25,7 +25,7 @@
     flex-direction: column;
     margin: 1vh 10vw;
     position: absolute;
-    top: 8vh;
+    top: 9vh;
     right: 0;
 }
 

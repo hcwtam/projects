@@ -1,0 +1,64 @@
+.Forms {
+    text-align: center;
+    background-color: rgb(47, 177, 177);
+    height: 100vh;
+    position: relative;
+    overflow:hidden;
+    z-index: 1;
+}
+
+.Forms:before{
+    position:absolute;
+    left:0;
+    top:75px;
+    content: url(../../assets/background.png);
+    opacity:0.04;
+    width: 100%;
+    z-index: -1;
+}
+
+.content {
+    margin: 10px auto;
+    height: 65vh;
+    width: 70vw;
+    min-width: 700px;
+    border: 5px solid rgb(99, 99, 99);
+    border-radius: 35px;
+    font-size: 32px;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    width: 100%;
+    height: 42px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 30px 30px 0 0;
+    text-transform: capitalize;
+}
+
+.formsContainer {
+    margin: 5px 0;
+    height: 90%;
+    width: 100%;
+    border: 3px solid rgb(255, 181, 44);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgb(255, 184, 51);
+    overflow: hidden;
+}
+
+.formsContainer > div {
+    width: 100%;
+    overflow: auto;
+    height: 100%;
+    padding-right: 15px;
+}
+
+.icon {
+    position: absolute;
+    bottom: 140px;
+    right: 130px;
+    color: rgb(157, 240, 89);
+    font-size: 30px;
+}
