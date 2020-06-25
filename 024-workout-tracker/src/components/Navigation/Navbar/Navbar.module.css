@@ -28,3 +28,25 @@
 .home {
     cursor: pointer;
 }
+
+.dumbbell {
+    position: absolute;
+    top: 15px;
+    right: 75px;
+}
+
+@media (max-width: 500px) {
+    .Navbar {
+        padding: 20px 20px;
+    }
+
+    .title {
+        padding-left: 100px;
+        padding-right: 20%;
+    }
+
+    .dumbbell {
+        display: none;
+    }
+}
+

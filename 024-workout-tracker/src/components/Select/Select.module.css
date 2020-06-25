@@ -14,3 +14,14 @@ margin: 20vh auto 5vh;
     display: inline-block;
     margin: 5vh 2vw;
 }
+
+@media (max-width: 770px) {
+    .button {
+        display: block;
+        margin: 0;
+    }
+
+    .question {
+        font-size: 30px;
+    }
+}

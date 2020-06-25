@@ -107,3 +107,19 @@ button.ButtonTall:disabled::before {
     transform: translate3d(0, 0.75em, -1em);
     transition: all 175ms cubic-bezier(0, 0, 1, 1);
 }
+
+@media (max-width: 770px) {
+  button.ButtonTall {
+    height: 11vh;
+    width: 30%;
+    margin: 5% 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 180%;
+  }
+
+  button.ButtonTall i {
+    font-size: 180%;
+  }
+}

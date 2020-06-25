@@ -43,7 +43,7 @@ margin: 20vh auto 5vh;
 
 .chartContainer {
     width: 100%;
-    height: 100%;
+    height: 52vh;
 }
 
 .progress {
@@ -61,4 +61,38 @@ margin: 20vh auto 5vh;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.25);
     overflow: auto;
+}
+
+@media (max-width: 770px) {
+    .panel,
+    .progress {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        top: 50px;
+    }
+    
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        height: 40px;
+        position: fixed;
+        top: 58px;
+        left: 0px;
+        width: 100vw;
+        box-shadow: 0 5px 5px rgb(182, 182, 182);
+    }
+
+    .chartContainer {
+        height: 30vh;
+    }
+    .progress {
+        top: 9%;
+        height: 45vh;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+    }
 }

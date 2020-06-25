@@ -123,7 +123,7 @@ export const legsData = [
         reps: '3x8-12'
     },
     {
-        excercise: 'leg press',
+        excercise: 'leg extensions',
         reps: '3x8-12'
     },
     {

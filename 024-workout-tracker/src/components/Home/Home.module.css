@@ -40,3 +40,39 @@
     top: 8vh;
     left: 0
 }
+
+@media (max-width: 770px) {
+    .nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .display {
+        display: none;
+    }
+
+    .Buttons,
+    .Panel {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    .Buttons {
+        position: absolute;
+        top: 10%;
+        width: 83%;
+    }
+
+    .Panel {
+        position: absolute;
+        top: 72%;
+        width: 100%;
+    }
+
+    .button {
+        margin: -1% 0;
+    }
+}

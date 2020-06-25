@@ -34,3 +34,17 @@ input {
 .button:hover {
     background-color: rgb(180, 87, 0);
 }
+
+@media (max-width: 770px) {
+    .Counter {
+        width: 20px;
+        padding: 0;
+    }
+
+    .button {
+        margin: 15px;
+        border-radius: 20px;
+        box-shadow: none;
+        border: 1px solid white;
+    }
+}

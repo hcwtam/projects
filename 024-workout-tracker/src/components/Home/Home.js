@@ -51,18 +51,29 @@ const Home = props => {
 
     return (
         <div className={styles.Home}>
-            <Navbar title='Home'/>
+            <div className={styles.nav}>
+                <Navbar title='Home'/>
+            </div>
             <div className={styles.Panel}>
-                <div></div>
-                <Display picture={image}/>
+                <div className={styles.display}>
+                    <Display picture={image}/>
+                </div>
                 <ButtonTall onHover={hoverHandler} clicked={pushHandler} icon="fas fa-chart-line">stats</ButtonTall>
                 <ButtonTall onHover={hoverHandler} icon="fas fa-cog">setting</ButtonTall>
             </div>
             <div className={styles.Buttons}>
-                <Button onHover={hoverHandler} clicked={pushHandler}>pull</Button>
-                <Button onHover={hoverHandler} clicked={pushHandler}>push</Button>
-                <Button onHover={hoverHandler} clicked={pushHandler}>legs</Button>
-                <Button disabled onHover={hoverHandler}>Empty</Button>
+                <div className={styles.button}>
+                    <Button onHover={hoverHandler} clicked={pushHandler}>pull</Button>
+                </div>
+                <div className={styles.button}>
+                    <Button onHover={hoverHandler} clicked={pushHandler}>push</Button>
+                </div>
+                <div className={styles.button}>
+                    <Button onHover={hoverHandler} clicked={pushHandler}>legs</Button>
+                </div>
+                <div className={styles.button}>
+                        <Button disabled onHover={hoverHandler}>Empty</Button>
+                </div>
             </div>
             <Footer />
         </div>

@@ -124,3 +124,13 @@ button.Button.fail::before {
   box-shadow: 0 0 0 2px rgb(247, 77, 77), 0 0.25em 0 0 hsl(0, 100%, 61%);
   background: rgb(255, 126, 126);
 }
+
+@media (max-width: 770px) {
+  .Button {
+    font-size: 4.7vw;
+  }
+  button.Button {
+    height: 9vh;
+    width: 90%;
+  }
+}

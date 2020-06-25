@@ -6,9 +6,10 @@ import Counter from '../Counter/Counter';
 const Form = props => {
     return (
         <div className={styles.Form}>
-            <div style={{marginLeft: 30}}>{props.reps}</div>
+            <div className={styles.reps}>{props.reps}</div>
             <div className={styles.sets}>
-                <div>{props.excercise}</div>
+                <div className={styles.repsMobile}>{props.reps}</div>
+                <div className={styles.excercise}><div>{props.excercise}</div></div>
                 <Counter 
                     changed={(weight)=>props.changed(weight, props.position)} 
                     weight={props.weight}

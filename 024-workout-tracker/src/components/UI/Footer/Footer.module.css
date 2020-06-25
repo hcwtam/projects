@@ -68,8 +68,12 @@
     z-index: 3;
 }
 
-@media (max-height: 550px) {
-    .Footer {
-        top: 100%;
+@media (max-width: 550px) {
+    .dumbbellContainer {
+        right: 10px;
+    }
+
+    .dumbbell {
+        width: 100px;
     }
 }

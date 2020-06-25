@@ -13,7 +13,7 @@ const Navbar = props => {
                 <div className={styles.home} onClick={() => props.history.push('/home')}>
                     <LogoSmall />
                 </div>
-                    <div style={{position: 'absolute', top: 15, right: 75}}><DumbbellSmall /></div>
+                    <div className={styles.dumbbell}><DumbbellSmall /></div>
             </div>
             <div className={styles.border} />
         </React.Fragment>

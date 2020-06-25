@@ -20,19 +20,23 @@ const Forms = props => {
     
     const incHandler = useCallback((position) => {
         const update = [...output];
+        if (isNaN(update[position])) update[position] = 2.5;
         update[position] += 2.5;
+
         setOutput(update);
         // console.log(update);
     }, [output])
     
     const decHandler = useCallback((position) => {
         const update = [...output];
+        if (isNaN(update[position])) update[position] = 2.5;
         update[position] -= 2.5;
         setOutput(update);
         // console.log(update);
     }, [output])
     
     const changeHandler = useCallback((weight, position) => {
+        if (isNaN(weight) && weight !== '') setOutput(output);
         const update = [...output];
         update[position] = weight;
         setOutput(update);
@@ -40,19 +44,20 @@ const Forms = props => {
     }, [output])
     
     const submitHandler = useCallback(() => {
-        const data = {
+        if (output[0]) {const submitData = {
             weights: output,
-            date: today
+            date: today,
+            type: data
         }
         
-    axios.post(`/${props.title}.json`, data)
-    .then(response => {
-        console.log(response);
-        setMessage('Great!');})
-        .catch(error => {
-            // console.log(error);
-            setMessage("Something's wrong...");});
-    }, [output, props.title, today])
+        axios.post(`/${props.title}.json`, submitData)
+        .then(response => {
+            console.log(response);
+            setMessage('Great!');})
+            .catch(error => {
+                // console.log(error);
+                setMessage("Something's wrong...")})};
+        }, [output, props.title, today, data])
         
     let footer = <Footer back dumbbell />;
     if (message) footer = <Footer back dumbbell isActive/>;
@@ -90,9 +95,13 @@ const Forms = props => {
             
     useEffect(() => {
         if (message === 'Great!') {
-            setTimeout(()=> props.history.push('/home'),1500);
+            setTimeout(()=> props.history.push({
+                pathname: '/stats',
+            state: {
+                type: props.title.charAt(0).toUpperCase() + props.title.slice(1, 4)
+            }}),1500);
         }
-    },[message, props.history]);
+    },[message, props.history, props.title]);
     
     const fetchWeights = useCallback(() => {
         axios.get(`/${props.title}.json`)
@@ -138,6 +147,9 @@ const Forms = props => {
                 <div className={styles.formsContainer} >
                     <div>
                         {forms}
+                        <div className={styles.mobileSubmit}>
+                            {submitButton}
+                        </div>
                     </div>
                 </div>
                 <div style={{marginTop: -22}}>

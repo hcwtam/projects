@@ -13,10 +13,14 @@ const Counter = props => {
             <div onClick={props.dec} className={styles.button}>−</div>
             <input 
                 onChange={(e)=>{
-                parseFloat(e.target.value) && props.changed(parseFloat(e.target.value))}} 
-                type='number' 
+                    if (parseFloat(e.target.value))
+                    props.changed(parseFloat(e.target.value));
+                    if (e.target.value === '')
+                    props.changed(parseFloat(e.target.value));
+                console.log(e.target.value)}} 
+                type='text' 
                 required 
-                placeholder='kg' 
+                placeholder='kg'
                 value={props.weight} />
             {/* <div style={{padding: 5, paddingLeft: 0, fontSize: 14}}>kg</div> */}
             <div onClick={props.inc} className={styles.button}>+</div>

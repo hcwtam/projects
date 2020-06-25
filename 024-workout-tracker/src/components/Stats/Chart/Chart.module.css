@@ -1,5 +1,11 @@
 .Chart {
-    background-color: white;
-    border: 2px solid grey;
+    border: 2px solid rgb(194, 194, 194);
     border-radius: 5px;
+    height: 100%;
+}
+
+@media (max-width: 770px) {
+    .Chart {
+        border: 5px solid rgb(212, 212, 212);
+    }
 }

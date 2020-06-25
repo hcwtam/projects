@@ -11,6 +11,10 @@
     font-weight: 500;
 }
 
+.reps {
+    margin-left: 30px;
+}
+
 .sets {
     margin: 5px 5% 5px 0px;
     padding: 0px 20px;
@@ -25,4 +29,56 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.repsMobile {
+    display: none;
+}
+
+@media (max-width: 770px) {
+    .Form {
+        margin: 20px 10px;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        background-color: inherit;
+    }
+    .content {
+        min-width: 90%;
+        width: 90%;
+    }
+    .excercise {
+        width: 100%;
+        font-size: 100%;
+        padding: 20px;
+        margin-top: -20px;
+        text-transform: capitalize;
+        text-shadow: 0 0 1px rgba(192, 192, 192, 0.6);
+    }
+    .sets {
+        height: 140px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        margin: 0px auto;
+        padding: 30px 0;
+        border-radius: 0;
+        background-color: inherit;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .reps {
+        display: none;
+    }
+
+    .repsMobile {
+        font-size: 85%;
+        display: block;
+        margin-top: -50px;
+        color: rgba(255, 255, 255, 0.7);
+        text-shadow: none;
+    }
 }
