@@ -1,0 +1,17 @@
+.Cell {
+    height: 50px;
+    width: 50px;
+    border: 1px solid lightgrey;
+}
+
+.Cell.placed {
+    background-color: lime;
+}
+
+.Cell.destroyed {
+    background-color: red;
+}
+
+.Cell.missed {
+    background-color: grey;
+}
