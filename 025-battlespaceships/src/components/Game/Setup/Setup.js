@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from "react";
 
-import styles from "./Board.module.css";
-import Cell from "./Cell/Cell";
-import { ship1, ship2, ship3, ship4, ship5 } from "../../lib/ships/ships";
+import styles from "./Setup.module.css";
+import Cell from "../Cell/Cell";
+import { ship1, ship2, ship3, ship4, ship5 } from "../../../lib/ships/ships";
 
-const Board = () => {
+const Setup = ({ send }) => {
   const [position, setPosition] = useState({});
   const [selected, setSelected] = useState([]);
   const [ship, setShip] = useState(1);
   const [rotation, setRotation] = useState(0);
+
+  // send position ids to Game when all ships are placed
+  useEffect(() => {
+    if (ship > 5) setTimeout(() => send(selected), 1000);
+  }, [ship, selected, send]);
 
   // Check current position of cursor
   const hoverHandler = (x, y) => {
@@ -73,11 +78,11 @@ const Board = () => {
   }
 
   return (
-    <div className={styles.Board} onMouseLeave={() => hoverHandler()}>
+    <div className={styles.Setup} onMouseLeave={hoverHandler}>
       {cells}
       <button onClick={rotationHandler}>rotate</button>
     </div>
   );
 };
 
-export default Board;
+export default Setup;

@@ -4,7 +4,7 @@
     border: 1px solid lightgrey;
 }
 
-.Cell.placed {
+.Cell.selected {
     background-color: lime;
 }
 

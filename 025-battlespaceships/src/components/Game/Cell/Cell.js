@@ -17,12 +17,14 @@ import styles from "./Cell.module.css";
 //   }
 // };
 
-const Cell = ({ x, y, id, hovered, clicked, selected }) => {
+const Cell = ({ x, y, id, hovered, clicked, selected, destroyed, missed }) => {
   //   const [addClass, dispatch] = useReducer(reducer, initialAddClass);
 
   //   if (selected) dispatch({ type: "placed" });
   let addClass = "";
-  if (selected) addClass = styles.placed;
+  if (selected) addClass = styles.selected;
+  if (destroyed) addClass = styles.destroyed;
+  if (missed) addClass = styles.missed;
 
   return (
     <div
