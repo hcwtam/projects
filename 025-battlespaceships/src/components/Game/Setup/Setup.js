@@ -1,14 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext, useEffect } from "react";
 
 import styles from "./Setup.module.css";
 import Cell from "../Cell/Cell";
 import { ship1, ship2, ship3, ship4, ship5 } from "../../../lib/ships/ships";
+import { PlayersContext } from "../../../App";
 
 const Setup = ({ send }) => {
   const [position, setPosition] = useState({});
   const [selected, setSelected] = useState([]);
   const [ship, setShip] = useState(1);
   const [rotation, setRotation] = useState(0);
+
+  const [me, opponent] = useContext(PlayersContext);
 
   // send position ids to Game when all ships are placed
   useEffect(() => {
@@ -81,6 +84,7 @@ const Setup = ({ send }) => {
     <div className={styles.Setup} onMouseLeave={hoverHandler}>
       {cells}
       <button onClick={rotationHandler}>rotate</button>
+      <div>{me}</div>
     </div>
   );
 };
