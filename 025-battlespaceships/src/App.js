@@ -3,6 +3,7 @@ import React, { useState, useCallback } from "react";
 import "./App.css";
 import Game from "./components/Game/Game";
 import Lobby from "./components/Lobby/Lobby";
+import background from "./assets/background.mp4";
 
 export const PlayersContext = React.createContext();
 
@@ -28,6 +29,9 @@ function App() {
           <Lobby connected={whenReady} />
         )}
       </PlayersContext.Provider>
+      <video autoPlay loop muted>
+        <source src={background} type="video/mp4" />
+      </video>
     </div>
   );
 }

@@ -22,3 +22,15 @@
     display: flex;
     flex-flow: wrap;
 }
+
+@media (max-height: 500px) {
+    .Me {
+        height: 90vh;
+        width: 90vh;
+    }
+
+    .Opponent {
+        height: 40vh;
+        width: 40vh;
+    }
+}

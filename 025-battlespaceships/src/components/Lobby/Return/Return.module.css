@@ -1,0 +1,13 @@
+.Return {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    font-size: 2rem;
+    color: rgba(126, 240, 255, 0.8);
+    transition: ease-in-out 300ms;
+}
+
+.Return:hover {
+    text-shadow: rgba(126, 240, 255, 0.8) 0 0 20px;
+}

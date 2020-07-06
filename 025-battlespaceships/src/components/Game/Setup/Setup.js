@@ -10,8 +10,16 @@ const Setup = ({ send }) => {
   const [selected, setSelected] = useState([]);
   const [ship, setShip] = useState(1);
   const [rotation, setRotation] = useState(0);
+  const [disconnect, setDisconnect] = useState(false);
 
-  const [me, opponent] = useContext(PlayersContext);
+  useEffect(() => {
+    if (ship > 5) {
+      const timer = setTimeout(() => setDisconnect(true), 60000);
+      return () => clearTimeout(timer);
+    }
+  }, [ship]);
+
+  const [me] = useContext(PlayersContext);
 
   // send position ids to Game when all ships are placed
   useEffect(() => {
@@ -80,7 +88,9 @@ const Setup = ({ send }) => {
     }
   }
 
-  return (
+  return disconnect ? (
+    <div>Game is disconnected :(</div>
+  ) : (
     <div className={styles.Setup} onMouseLeave={hoverHandler}>
       {cells}
       <button onClick={rotationHandler}>rotate</button>

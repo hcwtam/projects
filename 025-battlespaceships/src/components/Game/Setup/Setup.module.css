@@ -5,3 +5,10 @@
     display: flex;
     flex-flow: wrap;
 }
+
+@media (max-height: 500px) {
+    .Setup {
+        height: 90vh;
+        width: 90vh;
+    }
+}

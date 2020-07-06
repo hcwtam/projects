@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import firebase from "../../../firebase";
 
+import Return from "../Return/Return";
+import styles from "./CreateGame.module.css";
+
 const code = Math.random().toString().substring(2, 8);
 
-const CreateGame = ({ connected }) => {
+const CreateGame = ({ connected, clicked }) => {
   const [name, setName] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
@@ -42,15 +45,34 @@ const CreateGame = ({ connected }) => {
 
   const beforeSubmit = (
     <div>
-      <input type="text" onChange={changeHandler} value={name}></input>
+      <label>create game</label>
+      <input
+        type="text"
+        placeholder="Choose a name"
+        onChange={changeHandler}
+        autoFocus
+        value={name}
+      ></input>
       <button onClick={submitHandler}>create</button>
+      <Return clicked={clicked} />
     </div>
   );
 
   const afterSubmit = (
-    <div>
-      <div>Waiting for opponent to join</div>
-      <div>{code}</div>
+    <div style={{ fontSize: "1.5rem" }}>
+      <div style={{ margin: 20 }}>Challenge your rival with this code</div>
+      <div
+        className={styles.copy}
+        onClick={() => {
+          navigator.clipboard.writeText(code);
+        }}
+      >
+        <div style={{ fontWeight: "normal", fontSize: "1rem" }}>
+          Click to copy
+        </div>
+        {code}
+      </div>
+      <Return clicked={clicked} />
     </div>
   );
 

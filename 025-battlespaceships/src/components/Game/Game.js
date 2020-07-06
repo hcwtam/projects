@@ -5,6 +5,7 @@ import Setup from "./Setup/Setup";
 import Battle from "./Battle/Battle";
 
 const Game = ({ code, me, opponent }) => {
+  const [setupDone, setSetupDone] = useState(false);
   const [targetIds, setTargetIds] = useState([]);
   const [hitIds, setHitIds] = useState([]);
   const [missedIds, setMissedIds] = useState([]);
@@ -14,7 +15,6 @@ const Game = ({ code, me, opponent }) => {
   const [myMissedIds, setMyMissedIds] = useState([]);
   const [turn, setTurn] = useState("player1");
   const [data, setData] = useState({});
-  const [setupDone, setSetupDone] = useState(false);
 
   // upload my ids to db after my setup, and pre-upload empty arrays for missed and hit ids
   const receiveIds = (idsArray) => {
@@ -27,6 +27,7 @@ const Game = ({ code, me, opponent }) => {
         [`${me}Hit${opponent}Ids`]: [],
         [`${me}Missed${opponent}Ids`]: [],
         turn: "player1",
+        disconnect: false,
       });
   };
 
@@ -96,7 +97,7 @@ const Game = ({ code, me, opponent }) => {
 
   // check at setup stage, if both player 1 and 2 have finished setup
   if (!setupDone && data[`${me}Ids`] && data[`${opponent}Ids`]) {
-    setSetupDone((prev) => !prev);
+    setSetupDone(true);
   }
 
   return (

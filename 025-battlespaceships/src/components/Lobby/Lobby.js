@@ -17,9 +17,9 @@ const Lobby = ({ connected }) => {
       {currentPage === "home" ? (
         <Home clicked={pageHandler} />
       ) : currentPage === "create" ? (
-        <CreateGame connected={connected} />
+        <CreateGame clicked={pageHandler} connected={connected} />
       ) : (
-        <JoinGame connected={connected} />
+        <JoinGame clicked={pageHandler} connected={connected} />
       )}
     </div>
   );

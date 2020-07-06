@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import styles from "./Battle.module.css";
 import Cell from "../Cell/Cell";
@@ -16,6 +16,17 @@ const Battle = ({
   hitOrMiss,
 }) => {
   const [position, setPosition] = useState({});
+  const [disconnect, setDisconnect] = useState(false);
+
+  useEffect(() => {
+    if (turn === opponent) {
+      const timer = setTimeout(() => setDisconnect(true), 60000);
+      return () => clearTimeout(timer);
+    } else {
+      const timer = setTimeout(() => setDisconnect(true), 60000);
+      return () => clearTimeout(timer);
+    }
+  }, [turn, opponent]);
 
   const hoverHandler = (x, y) => {
     // console.log("x:" + x, "y:" + y);
@@ -65,9 +76,10 @@ const Battle = ({
     }
   }
 
+  let page;
   if (targetIds.length) {
     if (myIds.length) {
-      return (
+      page = (
         <div className={styles.Battle}>
           <div className={styles.Me} onMouseLeave={hoverHandler}>
             {myBoard}
@@ -81,11 +93,15 @@ const Battle = ({
         </div>
       );
     } else {
-      return <div>You lose!</div>;
+      page = <div>You lose!</div>;
     }
   } else {
-    return <div>You win!</div>;
+    page = <div>You win!</div>;
   }
+
+  if (disconnect) page = <div>Game is disconnected :(</div>;
+
+  return page;
 };
 
 export default Battle;

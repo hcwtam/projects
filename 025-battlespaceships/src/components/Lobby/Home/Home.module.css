@@ -1,0 +1,33 @@
+.Home {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.Home h1 {
+    font-family: 'Azonix';
+    font-size: 4rem;
+    margin: 5px;
+    padding: 0;
+    letter-spacing: 5px;
+    font-weight: normal;
+    text-shadow: rgba(82, 158, 152, 0.8) 1px 1px 10px;
+}
+
+.Home button {
+    width: 200px;
+    margin: 50px 20px 0;
+}
+
+@media (max-width: 500px) {
+    .Home h1 {
+        font-size: 3rem;
+    }
+}

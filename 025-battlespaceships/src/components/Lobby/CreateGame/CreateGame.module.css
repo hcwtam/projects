@@ -1,0 +1,16 @@
+.copy {
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: rgba(99, 99, 99, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+}
+
+.copy:active,
+.copy:hover {
+    color: rgba(126, 240, 255, 0.8);
+    background-color: rgba(182, 182, 182, 0.1);
+    box-shadow: inset 0 0 2px rgba(126, 240, 255, 0.8);
+}
