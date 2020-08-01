@@ -1,0 +1,40 @@
+.Navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 80px;
+    background: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 100px 0 50px;
+    transition: all 0.5s ease-in-out;
+}
+
+.Navbar * {
+    cursor: pointer;
+}
+
+.Navbar span {
+    margin: 0 50px;
+    opacity: 0.8;
+    font-size: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.Navbar span:hover {
+    opacity: 0.5;
+}
+
+.Navbar.white {
+    color: white;
+}
+
+.icons {
+    display: flex;
+    align-items: flex-end;
+    height: 30px
+}

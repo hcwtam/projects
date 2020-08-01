@@ -1,0 +1,63 @@
+.Cart {
+    background: rgb(241, 241, 241);
+    min-height: 100vh;
+    font-weight: 600;
+    cursor: default;
+}
+
+.Cart * {
+    cursor: default;
+}
+
+.summary {
+    padding: 5px 20px 10px;
+    background: white;
+}
+
+.Cart div {
+    font-size: 1rem;
+}
+
+.Cart button {
+    margin: 30px 0 0 170px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.Cart h5 {
+    font-size: 1.2rem;
+}
+
+
+.break {
+    margin: -20px -20px 20px;
+    background-color: rgb(243, 243, 243);
+    height: 3px;
+}
+
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+}
+
+.items {
+    padding: 10px 5px;
+}
+
+.count {
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    color: white;
+    background: rgb(41, 41, 41);
+    position: absolute;
+    top: 10px;
+    right: 88px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1px 2px 0;
+}

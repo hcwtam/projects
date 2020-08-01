@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  border: none;
+  color: black;
+  background-color: rgb(255, 206, 46);
+  margin: 50px 0;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover,
+button:active {
+  opacity: 0.8;
+}
+
+button:disabled {
+  background-color: rgb(194, 194, 194);
+  color: grey;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  opacity: 1;
+}
+
+button.Homepage1 {
+  color: black;
+  background-color: rgb(255, 206, 46);
+  transition: all 0.5s ease-in-out;
+}
+
+button.Homepage2 {
+  color: white;
+  background-color: rgb(182, 46, 46);
+  transition: all 0.5s ease-in-out;
+}
+
+button.Homepage3 {
+  color: white;
+  background-color: #CE3F00;
+  transition: all 0.5s ease-in-out;
+}
+
+button.Homepage4 {
+  color: white;
+  background-color: #496B52;
+  transition: all 0.5s ease-in-out;
+}
+
+button span {
+  padding-left: 30px;
+}
+
+i {
+  transition: all 0.2s ease-in-out;
+}
+
+i:hover,
+i:active {
+  opacity: 0.5;
+}
+
+img {
+  color: white;
+}
+
+.rodal-mask {
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: #5a5b5c;
+  font-weight: 600;
+}
+
+a:hover {
+  color: rgb(36, 44, 59);
+  text-decoration: underline;
+}

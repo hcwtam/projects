@@ -1,0 +1,66 @@
+.Homepage {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    transition: all 0.5s ease-in-out;
+}
+
+.Background {
+    margin-top: 30px;
+    height: 85vh;
+    width: 500px;
+}
+
+.Background img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.Content {
+    text-align: left;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    margin-left: 150px;
+}
+
+.Content h1 {
+    font-size: 2.5rem;
+    padding-bottom: 30px;
+}
+
+.Homepage:global(.Homepage1),
+.Homepage:global(.Homepage1) h1,
+.Homepage:global(.Homepage1) div {
+    background: #F5F5F5;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.Homepage:global(.Homepage2),
+.Homepage:global(.Homepage2) h1,
+.Homepage:global(.Homepage2) div {
+    background: #060306;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.Homepage:global(.Homepage3),
+.Homepage:global(.Homepage3) h1,
+.Homepage:global(.Homepage3) div {
+    background: #F4AE00;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.Homepage:global(.Homepage4),
+.Homepage:global(.Homepage4) h1,
+.Homepage:global(.Homepage4) div {
+    background: #BEB4E9;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}

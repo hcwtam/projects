@@ -1,0 +1,39 @@
+.Sidebar {
+    position: fixed;
+    text-align: left;
+    width: 250px;
+    padding: 0 25px;
+    top: 80px;
+    left: 0;
+}
+
+.Sidebar h4 {
+    padding-left: 10px;
+}
+
+.Sidebar li {
+    list-style: none;
+    padding: 10px 0 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 150ms all ease-out;
+}
+
+.Sidebar li:active,
+.Sidebar .active {
+    font-weight: 600;
+}
+
+.Sidebar li:hover {
+    list-style: none;
+    padding: 10px 0;
+    cursor: pointer;
+    background-color: rgb(252, 246, 231);
+
+}
+
+.Sidebar img {
+    margin: 10px 10px -4px;
+    height: 20px;
+    width: 20px;
+}

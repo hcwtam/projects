@@ -1,0 +1,35 @@
+.Order {
+    width: 600px;
+    text-align: left;
+    background-color: rgb(255, 253, 248);
+    border-radius: 5px;
+    margin: 50px 0;
+    padding: 0 30px 10px;
+    box-shadow: 0 2px 10px rgb(223, 223, 223);
+    line-height: 1.8;
+}
+
+.flexContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    border-bottom: 1px solid rgb(230, 230, 230);
+    padding: 5px -5px;
+    font-weight: 600;
+}
+
+.quantity {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -10px;
+}
+
+.quantity div {
+    padding: 10px;
+}

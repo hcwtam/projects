@@ -1,0 +1,183 @@
+[ {
+  "id" : 0,
+  "imageURL" : "apple.png",
+  "name" : "apple",
+  "price" : 0.4,
+  "shortDescription" : "UK",
+  "type" : "favourites"
+}, {
+  "id" : 1,
+  "imageURL" : "orange.png",
+  "name" : "orange",
+  "price" : 0.5,
+  "shortDescription" : "Japan",
+  "type" : "citrus"
+}, {
+  "id" : 2,
+  "imageURL" : "banana.png",
+  "name" : "banana",
+  "price" : 0.5,
+  "shortDescription" : "USA",
+  "type" : "favourites"
+}, {
+  "id" : 3,
+  "imageURL" : "strawberry.png",
+  "name" : "strawberry",
+  "price" : 2.0,
+  "shortDescription" : "Japan",
+  "type" : "berries"
+}, {
+  "id" : 4,
+  "imageURL" : "peach.png",
+  "name" : "peach",
+  "price" : 1.5,
+  "shortDescription" : "Japan",
+  "type" : "favourites"
+}, {
+  "id" : 5,
+  "imageURL" : "pineapple.png",
+  "name" : "pineapple",
+  "price" : 2.5,
+  "shortDescription" : "Brazil",
+  "type" : "exotic"
+}, {
+  "id" : 6,
+  "imageURL" : "grape.png",
+  "name" : "grape",
+  "price" : 0.5,
+  "shortDescription" : "Korea",
+  "type" : "berries"
+}, {
+  "id" : 7,
+  "imageURL" : "lemon.png",
+  "name" : "lemon",
+  "price" : 0.7,
+  "shortDescription" : "France",
+  "type" : "citrus"
+}, {
+  "id" : 8,
+  "imageURL" : "cherry.png",
+  "name" : "cherry",
+  "price" : 2.3,
+  "shortDescription" : "Turkey",
+  "type" : "favourites"
+}, {
+  "id" : 9,
+  "imageURL" : "mango.png",
+  "name" : "mango",
+  "price" : 1.2,
+  "shortDescription" : "Indonesia",
+  "type" : "exotic"
+}, {
+  "id" : 10,
+  "imageURL" : "blueberry.png",
+  "name" : "blueberry",
+  "price" : 1.4,
+  "shortDescription" : "UK",
+  "type" : "berries"
+}, {
+  "id" : 11,
+  "imageURL" : "watermelon.png",
+  "name" : "watermelon",
+  "price" : 0.5,
+  "shortDescription" : "Taiwan",
+  "type" : "melons"
+}, {
+  "id" : 12,
+  "imageURL" : "grapefruit.png",
+  "name" : "grapefruit",
+  "price" : 1.1,
+  "shortDescription" : "Japan",
+  "type" : "citrus"
+}, {
+  "id" : 13,
+  "imageURL" : "kiwi.png",
+  "name" : "kiwi",
+  "price" : 0.5,
+  "shortDescription" : "New Zealand",
+  "type" : "favourites"
+}, {
+  "id" : 14,
+  "imageURL" : "durian.png",
+  "name" : "durian",
+  "price" : 2.2,
+  "shortDescription" : "Malaysia",
+  "type" : "exotic"
+}, {
+  "id" : 15,
+  "imageURL" : "raspberry.png",
+  "name" : "raspberry",
+  "price" : 0.5,
+  "shortDescription" : "Greece",
+  "type" : "berries"
+}, {
+  "id" : 16,
+  "imageURL" : "passionfruit.png",
+  "name" : "passionfruit",
+  "price" : 1,
+  "shortDescription" : "Brazil",
+  "type" : "exotic"
+}, {
+  "id" : 17,
+  "imageURL" : "lime.png",
+  "name" : "lime",
+  "price" : 0.4,
+  "shortDescription" : "Italy",
+  "type" : "citrus"
+}, {
+  "id" : 18,
+  "imageURL" : "mangosteen.png",
+  "name" : "mangosteen",
+  "price" : 1.3,
+  "shortDescription" : "India",
+  "type" : "exotic"
+}, {
+  "id" : 19,
+  "imageURL" : "pomegranate.png",
+  "name" : "pomegranate",
+  "price" : 0.5,
+  "shortDescription" : "Indonesia",
+  "type" : "exotic"
+}, {
+  "id" : 20,
+  "imageURL" : "blackberry.png",
+  "name" : "blackberry",
+  "price" : 0.3,
+  "shortDescription" : "Spain",
+  "type" : "berries"
+}, {
+  "id" : 21,
+  "imageURL" : "papaya.png",
+  "name" : "papaya",
+  "price" : 1.6,
+  "shortDescription" : "Mexico",
+  "type" : "favourites"
+}, {
+  "id" : 22,
+  "imageURL" : "dragonfruit.png",
+  "name" : "dragonfruit",
+  "price" : 0.5,
+  "shortDescription" : "Mexico",
+  "type" : "favourites"
+}, {
+  "id" : 23,
+  "imageURL" : "lychee.png",
+  "name" : "lychee",
+  "price" : 2,
+  "shortDescription" : "China",
+  "type" : "favourites"
+}, {
+  "id" : 24,
+  "imageURL" : "pear.png",
+  "name" : "pear",
+  "price" : 0.7,
+  "shortDescription" : "Japan",
+  "type" : "favourites"
+}, {
+  "id" : 25,
+  "imageURL" : "cantaloupe.png",
+  "name" : "cantaloupe",
+  "price" : 2,
+  "shortDescription" : "Korea",
+  "type" : "melons"
+} ]

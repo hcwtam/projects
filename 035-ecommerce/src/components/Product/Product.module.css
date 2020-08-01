@@ -1,0 +1,63 @@
+.Product {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0) 100%);
+}
+
+.containers {
+    display: flex;
+    justify-content: center;
+}
+
+.imageContainer {
+    width: 350px;
+    margin: 100px 0;
+    border: 1px solid rgb(201, 201, 201);
+}
+
+.imageContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.detailContainer {
+    width: 350px;
+    margin: 100px 50px 0;
+    text-align: left;
+}
+
+.detailContainer h1 {
+    margin-top: 0;
+}
+
+.detailContainer hr {
+    margin: 20px 0;
+}
+
+.rating {
+    letter-spacing: 5px;
+}
+
+.quantity {
+    margin: 0 0 10px -250px;
+}
+
+.nutrition {
+    width: 370px;
+    margin: 30px 0;
+}
+
+.imageContainer img,
+.nutrition img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border: none;
+}
+
+.Product section {
+    width: 770px;
+    margin: 0 auto;
+}

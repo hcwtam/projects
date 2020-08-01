@@ -1,0 +1,90 @@
+.Checkout {
+  display: flex;
+  margin: 50px 0 0;
+  text-align: left;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 80%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+}
+
+.itemsContainer {
+  width: 50vw;
+  margin: 50px 30px 20px;
+}
+
+.itemsContainer h4 {
+  margin-bottom: 15px;
+}
+
+.break {
+  position: fixed;
+  top: 160px;
+  left: 58vw;
+  height: 72vh;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  padding-left: 80px;
+  padding-top: 50px;
+}
+
+.form input {
+  margin-top: 5px;
+  width: 300px;
+  background-color: rgb(255, 253, 248);
+  border-radius: 20px;
+  border: 1px solid rgb(199, 199, 199);
+  padding: 10px;
+}
+
+.form button {
+  width: 200px;
+  margin: 20px 0 0 40px;
+  border-radius: 30px;
+}
+
+.container {
+  width: 30vw;
+  padding: 10px 20px 20px;
+  background-color: rgb(255, 253, 248);
+  border-radius: 10px;
+  border: 1px solid rgb(223, 223, 223);
+  margin-bottom: 10px;
+}
+
+.container div {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.container h4 {
+  margin: 10px 0;
+}
+
+.container h5 {
+  margin: 5px 0;
+  color: rgb(100, 100, 100);
+}
+
+.detailContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detailContainer h5 {
+  font-size: 14px;
+}
+
+.stripeContainer {
+  width: 30vw;
+  background-color: rgb(255, 253, 248);
+  border-radius: 10px;
+  border: 1px solid rgb(223, 223, 223);
+  margin-bottom: 10px;
+  padding: 20px 10px;
+}
