@@ -16,10 +16,16 @@
 }
 
 .CardContainer {
-    width: 80vw;
+    width: 85vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0 0 0 150px;
+    padding: 0 0 0 13vw;
+}
+
+@media screen and (max-width: 916px) {
+    .CardContainer {
+        padding: 0 0 0 22vw;
+    }
 }

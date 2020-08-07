@@ -19,9 +19,9 @@ function Success() {
   const dispatch = useDispatch();
   const history = useHistory();
 
-  //   useEffect(() => {
-  //     if (!success) history.push('/shop');
-  //   }, [success, history]);
+  useEffect(() => {
+    if (!success) history.push('/shop');
+  }, [success, history]);
 
   useEffect(() => {
     if (!summary) {

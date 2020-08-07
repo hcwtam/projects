@@ -5,13 +5,13 @@
   "dependencies": {
     "@stripe/react-stripe-js": "^1.1.2",
     "@stripe/stripe-js": "^1.8.0",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
+    "@testing-library/jest-dom": "^5.11.2",
+    "@testing-library/react": "^10.4.7",
+    "@testing-library/user-event": "^12.1.0",
     "@tippyjs/react": "^4.1.0",
     "@types/jest": "^24.9.1",
-    "@types/node": "^12.12.50",
-    "@types/react": "^16.9.43",
+    "@types/node": "^12.12.53",
+    "@types/react": "^16.9.44",
     "@types/react-dom": "^16.9.8",
     "@types/react-modal": "^3.10.6",
     "@types/react-redux": "^7.1.9",
@@ -27,21 +27,22 @@
     "react-collapsible": "^2.8.0",
     "react-dom": "^16.13.1",
     "react-modal": "^3.11.2",
-    "react-redux": "^7.2.0",
+    "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
+    "react-router-redux": "^5.0.0-alpha.9",
     "react-scripts": "3.4.1",
-    "react-table": "^7.3.2",
+    "react-table": "^7.3.3",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "rodal": "^1.8.1",
     "stripe": "^8.81.0",
-    "typescript": "^3.7.5",
-    "yup": "^0.29.1"
+    "typescript": "^3.9.7",
+    "yup": "^0.29.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom-fourteen",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -58,5 +59,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "jest-environment-jsdom-sixteen": "^1.0.3",
+    "redux-mock-store": "^1.5.4"
   }
 }
