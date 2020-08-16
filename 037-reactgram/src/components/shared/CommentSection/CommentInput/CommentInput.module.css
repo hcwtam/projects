@@ -1,0 +1,42 @@
+.CommentInput form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(239, 239, 239, 1);
+    height: 56px;
+    padding: 0 10px;
+}
+
+.CommentInput input {
+    border: none;
+    background-color: inherit;
+    color: rgba(38, 38, 38, 1);
+    width: 80%;
+}
+
+.CommentInput input::placeholder {
+    color: rgb(126, 126, 126);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Segoe UI';
+    letter-spacing: 0;
+}
+
+.CommentInput button {
+    border: none;
+    background-color: inherit;
+    color: rgba(0, 149, 246, 1);
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding-top: 2px;
+
+}
+
+.CommentInput button:disabled {
+    opacity: .3;
+    cursor: inherit;
+
+}

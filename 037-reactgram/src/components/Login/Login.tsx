@@ -4,8 +4,14 @@ import * as Yup from 'yup';
 import { Link } from 'react-router-dom';
 
 import styles from './Login.module.css';
+import { login } from '../../utils/auth';
 
 interface Props {}
+
+type FormData = {
+  email: string;
+  password: string;
+};
 
 export default function Login({}: Props): ReactElement {
   const initialValues = {
@@ -18,8 +24,9 @@ export default function Login({}: Props): ReactElement {
     password: Yup.string().required('Required')
   });
 
-  const onSubmit = (values: any) => {
+  const onSubmit = (values: FormData) => {
     console.log('form data', values);
+    login(values);
   };
 
   return (

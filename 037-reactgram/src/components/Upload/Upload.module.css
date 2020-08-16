@@ -1,0 +1,83 @@
+.Overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.CloseIcon {
+    color: white;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.Modal {
+    max-width: none;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-flow: column;
+    padding: 0;
+    margin: 0;
+    color: rgba(38, 38, 38, 1);
+    font-size: 14px;
+}
+
+.Modal header {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fafafa;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Modal h1 {
+    font-size: 1rem;
+}
+
+.Button {
+    border: none;
+    background-color: inherit;
+    color: rgba(0, 149, 246, 1);
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+}
+
+.Button:disabled {
+    opacity: .5;
+    cursor: not-allowed
+}
+
+.Modal section {
+    box-sizing: border-box;
+    border: 1px solid rgba(219, 219, 219, 1);
+    width: 100%;
+    height: 120px;
+    padding: 15px 20px;
+    display: flex;
+}
+
+.Modal textarea {
+    margin: 3px 10px;
+    border: none;
+}
+
+.ImageContainer {
+    position: absolute;
+    right: 20px;
+    width: 80px;
+    height: 70px;
+}
+
+.ImageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

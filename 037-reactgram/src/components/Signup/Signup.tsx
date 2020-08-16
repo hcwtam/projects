@@ -4,8 +4,16 @@ import * as Yup from 'yup';
 import { Link } from 'react-router-dom';
 
 import styles from './Signup.module.css';
+import { signup, usernameExists } from '../../utils/auth';
 
 interface Props {}
+
+type FormData = {
+  email: string;
+  fullName: string;
+  password: string;
+  username: string;
+};
 
 export default function Login({}: Props): ReactElement {
   const initialValues = {
@@ -22,8 +30,10 @@ export default function Login({}: Props): ReactElement {
     password: Yup.string().required('Required')
   });
 
-  const onSubmit = (values: any) => {
+  const onSubmit = (values: FormData) => {
     console.log('form data', values);
+    if (usernameExists(values.username)) throw new Error('Username exists');
+    signup(values);
   };
 
   return (
@@ -79,7 +89,7 @@ export default function Login({}: Props): ReactElement {
       </div>
       <div className={styles.Login}>
         Have an account?{`  `}
-        <Link to="/login">Log in</Link>
+        <Link to="/">Log in</Link>
       </div>
     </>
   );

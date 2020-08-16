@@ -1,0 +1,19 @@
+.ActionsBar {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.ActionsBar div {
+    cursor: pointer;
+    margin: 0 8px;
+
+}
+
+.BookmarkIcon {
+    position: absolute;
+    right: 10px;
+}

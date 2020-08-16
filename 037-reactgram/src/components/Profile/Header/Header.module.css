@@ -1,0 +1,81 @@
+.Header {
+  width: 100%;
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+  display: flex;
+}
+
+.Avatar {
+  width: 150px;
+  height: 150px;
+  margin: 2px 90px 92px 75px;
+  border-radius: 50%;
+  border: 1px solid rgba(219, 219, 219, 1);
+  background-color: gray;
+}
+
+.Avatar img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Info {}
+
+.Username {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 20px;
+}
+
+.Username * {
+  margin-right: 20px;
+}
+
+.Username h1 {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgba(38, 38, 38, 1);
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+  margin: 0 20px 0 0;
+}
+
+.Username a {
+  background-color: transparent;
+  border: 1px solid rgba(219, 219, 219, 1);
+  border-radius: 4px;
+  color: rgba(38, 38, 38, 1);
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.Stats {
+  display: flex;
+}
+
+.Stats div {
+  margin-right: 40px;
+}
+
+.Stats strong {
+  font-weight: 600;
+}
+
+.AboutMe {
+  text-align: left;
+  margin-top: 18px;
+  line-height: 1.5;
+}
+
+.Name {
+  font-weight: 600;
+}
+
+.Website {
+  color: rgba(0, 55, 107, 1);
+  margin: 0;
+}

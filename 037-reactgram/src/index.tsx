@@ -5,12 +5,17 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { SWRConfig } from 'swr';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <SWRConfig
+      value={{ fetcher: (url) => fetch(url).then((res) => res.json()) }}
+    >
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </SWRConfig>
   </React.StrictMode>,
   document.getElementById('root')
 );

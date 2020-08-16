@@ -1,0 +1,47 @@
+.Comment {
+    display: flex;
+    position: relative;
+}
+
+.Avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid rgba(219, 219, 219, 1);
+}
+
+.Avatar img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Content {
+    margin-left: 15px;
+    width: 200px;
+}
+
+.Content h4 {
+    display: inline-block;
+    margin: 0;
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+.Content span {
+    word-wrap: break-word;
+}
+
+.CommentTime {
+    font-size: 12px;
+    letter-spacing: .2px;
+    color: rgba(142, 142, 142, 1);
+    margin: 10px 0 35px;
+}
+
+.Like {
+    position: absolute;
+    top: 3px;
+    right: -35px;
+}

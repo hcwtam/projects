@@ -1,0 +1,44 @@
+.CommentSection {
+    font-size: 14px;
+    text-align: left;
+    padding: 0 16px;
+    line-height: 1.7;
+}
+
+.Likes {
+    font-weight: 600;
+    margin: 5px 0 2px;
+}
+
+.Comment {
+    display: flex;
+
+}
+
+.User {
+    font-weight: 600;
+    margin-right: 5px;
+
+}
+
+.ViewAll {
+    border: 0;
+    color: rgba(142, 142, 142, 1);
+    line-height: inherit;
+    margin: 10px 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+.Time {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: .2px;
+    color: rgba(142, 142, 142, 1);
+    margin: 5px 0 10px;
+}
+
+.AddComment {
+    color: rgba(var(--fe0, 0, 55, 107), 1);
+    text-decoration: none;
+}
