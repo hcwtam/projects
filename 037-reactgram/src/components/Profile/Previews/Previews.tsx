@@ -1,23 +1,45 @@
 import React, { ReactElement } from 'react';
 
 import styles from './Previews.module.css';
-import { PostIcon } from '../../../assets/svg/icons';
+import { PostIcon, SavedIcon } from '../../../assets/svg/icons';
+import { PostData } from '../../../utils/posts';
 
 interface Props {
-  children: ReactElement;
+  posts: PostData[];
+  showPosts: () => void;
+  showSaved: () => void;
+  savedIsActive: boolean;
+  sameUser: boolean;
 }
 
-export default function Previews({ children }: Props): ReactElement {
+export default function Previews({
+  posts,
+  showPosts,
+  showSaved,
+  savedIsActive,
+  sameUser
+}: Props): ReactElement {
   return (
     <>
       <div className={styles.Banner}>
-        <div className={styles.Posts}>
+        <div
+          className={`${styles.Types} ${!savedIsActive && styles.Active}`}
+          onClick={showPosts}
+        >
           <PostIcon />
           <div>Posts</div>
         </div>
+        {sameUser && (
+          <div
+            className={`${styles.Types} ${savedIsActive && styles.Active}`}
+            onClick={showSaved}
+          >
+            <SavedIcon />
+            <div>Saved</div>
+          </div>
+        )}
       </div>
-      <section className={styles.Previews}>{children}</section>
-      {/* {postModal} */}
+      <section className={styles.Previews}>{posts}</section>
     </>
   );
 }

@@ -9,21 +9,29 @@ import {
 } from '../../../assets/svg/icons';
 
 interface Props {
+  likes: string[] | undefined;
   likePost?: () => void;
   unlikePost?: () => void;
   userId: string;
-  likes: string[] | undefined;
   openModal?: () => void;
   focusInput?: () => void;
+  bookmarks: string[] | undefined;
+  bookmarkPost?: () => void;
+  unmarkPost?: () => void;
+  postId: string;
 }
 
 export default function ActionsBar({
+  likes,
   likePost,
   unlikePost,
   userId,
-  likes,
   openModal,
-  focusInput
+  focusInput,
+  bookmarks,
+  postId,
+  bookmarkPost,
+  unmarkPost
 }: Props): ReactElement {
   const [isLiked, setIsLiked] = useState(false);
   const [isBookmarked, setIsBookmarked] = useState(false);
@@ -38,10 +46,25 @@ export default function ActionsBar({
     }
   };
 
+  const bookmarkHandler = () => {
+    if (isBookmarked) {
+      unmarkPost();
+      setIsBookmarked(false);
+    } else {
+      bookmarkPost();
+      setIsBookmarked(true);
+    }
+  };
+
   useEffect(() => {
     if (likes && likes.includes(userId)) setIsLiked(true);
     else setIsLiked(false);
   }, [likes, userId]);
+
+  useEffect(() => {
+    if (bookmarks && bookmarks.includes(postId)) setIsBookmarked(true);
+    else setIsBookmarked(false);
+  }, [bookmarks, postId]);
 
   return (
     <section className={styles.ActionsBar}>
@@ -54,10 +77,7 @@ export default function ActionsBar({
       {/* <div>
         <InboxIcon />
       </div> */}
-      <div
-        onClick={() => setIsBookmarked((prev) => !prev)}
-        className={styles.BookmarkIcon}
-      >
+      <div onClick={bookmarkHandler} className={styles.BookmarkIcon}>
         <BookmarkIcon isActive={isBookmarked} />
       </div>
     </section>

@@ -5,7 +5,7 @@ import avatar from '../../../assets/avatar.png';
 
 interface Props {
   style: {};
-  avatarUrl?: string;
+  avatarUrl: string;
 }
 
 export default function ProfilePicture({

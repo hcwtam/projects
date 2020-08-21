@@ -1,10 +1,11 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement, useContext } from 'react';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import styles from './Signup.module.css';
 import { signup, usernameExists } from '../../utils/auth';
+import { authContext } from '../../store/auth';
 
 interface Props {}
 
@@ -16,6 +17,9 @@ type FormData = {
 };
 
 export default function Login({}: Props): ReactElement {
+  const { setToken, setUserId } = useContext(authContext);
+  const history = useHistory();
+
   const initialValues = {
     email: '',
     fullName: '',
@@ -30,10 +34,14 @@ export default function Login({}: Props): ReactElement {
     password: Yup.string().required('Required')
   });
 
-  const onSubmit = (values: FormData) => {
+  const onSubmit = async (values: FormData) => {
     console.log('form data', values);
-    if (usernameExists(values.username)) throw new Error('Username exists');
-    signup(values);
+    if (await usernameExists(values.username))
+      throw new Error('Username exists');
+    const [token, userId] = await signup(values);
+    setToken(token);
+    setUserId(userId);
+    history.push('/');
   };
 
   return (

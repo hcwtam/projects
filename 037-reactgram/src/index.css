@@ -15,6 +15,10 @@ body {
   width: 100%;
 }
 
+button: {
+  outline: none;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -87,6 +91,10 @@ textarea::placeholder {
   color: rgb(77, 77, 77);
 }
 
+textarea:focus {
+  outline: none;
+}
+
 img {
   color: rgba(255, 255, 255, 0);
 }
@@ -101,4 +109,9 @@ a {
 a:visited {
   color: rgba(0, 55, 107, 1);
   text-decoration: none;
+}
+
+.tippy-content {
+  box-sizing: border-box !important;
+  padding: 0 !important;
 }

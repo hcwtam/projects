@@ -11,6 +11,7 @@ import { PostData, calcTimeInterval, formatLikes } from '../../../utils/posts';
 import { userContext } from '../../../store/user';
 import { useLikes } from '../../../hooks/useLikes';
 import { useComments } from '../../../hooks/useComments';
+import { useBookmark } from '../../../hooks/useBookmark';
 
 interface Props {
   showModal: boolean;
@@ -23,12 +24,13 @@ export default function PostModal({
   post,
   hideModal
 }: Props): ReactElement {
-  const { imageUrl, avatarUrl, posterName, time, caption } = post;
+  const { imageUrl, avatarUrl, posterName, time, caption, postId } = post;
   const { userId } = useContext(userContext);
   const { localLikes, doubleClickToLike, likePost, unlikePost } = useLikes(
     post,
     userId
   );
+  const { localBookmarks, bookmarkPost, unmarkPost } = useBookmark(post);
   const { localComments, addComment } = useComments(post);
   const inputRef = useRef(null);
 
@@ -69,9 +71,9 @@ export default function PostModal({
             <img src={avatarUrl} alt="avatar" />
           </div>
           <div>{posterName}</div>
-          <div className={styles.MoreIcon}>
+          {/* <div className={styles.MoreIcon}>
             <MoreIcon />
-          </div>
+          </div> */}
         </div>
         <div className={styles.Comments}>
           <Comment
@@ -83,10 +85,14 @@ export default function PostModal({
           {replies}
         </div>
         <ActionsBar
+          likes={localLikes}
           likePost={likePost}
           unlikePost={unlikePost}
           userId={userId}
-          likes={localLikes}
+          bookmarks={localBookmarks}
+          bookmarkPost={bookmarkPost}
+          unmarkPost={unmarkPost}
+          postId={postId}
           focusInput={() => inputRef.current.focus()}
         />
         <div className={styles.Likes}>

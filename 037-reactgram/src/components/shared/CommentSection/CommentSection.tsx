@@ -8,9 +8,14 @@ import { useComments } from '../../../hooks/useComments';
 interface Props {
   post: PostData;
   likes: string[] | undefined;
+  openModal?: () => void;
 }
 
-export default function CommentSection({ post, likes }: Props): ReactElement {
+export default function CommentSection({
+  post,
+  likes,
+  openModal
+}: Props): ReactElement {
   const { caption, posterName, time } = post;
   const { localComments, addComment } = useComments(post);
 
@@ -34,9 +39,9 @@ export default function CommentSection({ post, likes }: Props): ReactElement {
     ) : null;
   const viewAll =
     localComments && localComments[2] ? (
-      <a className={styles.ViewAll} href="/zs">
+      <div className={styles.ViewAll} onClick={openModal}>
         {`View all ${localComments.length} comments`}
-      </a>
+      </div>
     ) : null;
 
   return (

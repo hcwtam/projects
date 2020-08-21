@@ -6,15 +6,18 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { SWRConfig } from 'swr';
+import { AuthProvider } from './store/auth';
 
 ReactDOM.render(
   <React.StrictMode>
     <SWRConfig
       value={{ fetcher: (url) => fetch(url).then((res) => res.json()) }}
     >
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <AuthProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </AuthProvider>
     </SWRConfig>
   </React.StrictMode>,
   document.getElementById('root')

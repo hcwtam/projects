@@ -1,0 +1,194 @@
+.Settings {
+    width: 800px;
+    display: flex;
+    border: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 3px;
+    background-color: white;
+    margin: 85px 0 10px;
+}
+
+.Side {
+    width: 200px;
+    text-align: left;
+    border-right: 1px solid rgba(219, 219, 219, 1);
+}
+
+
+.Side h1 {
+    width: 100%;
+    font-weight: 600;
+    font-size: 1rem;
+    border-left: 2px solid black;
+    margin: 0;
+    padding: 15px 25px;
+}
+
+.Form {
+    width: 600px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.Avatar {
+    text-align: left;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 30px 0 10px;
+    line-height: 1.3;
+}
+
+.Upload {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0095f6;
+    cursor: pointer;
+}
+
+.Upload input[type="file"] {
+    width: 140px;
+    height: 20px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.ImageContainer {
+    width: 50px;
+    height: 50px;
+    margin: 0 30px 0 25px;
+    border-radius: 50%;
+    border: 1px solid rgba(219, 219, 219, 1);
+    background-color: gray;
+}
+
+.Avatar img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Field {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+}
+
+.Field label {
+    margin-right: 30px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.Field input {
+    background-color: white;
+    margin-right: 50px;
+    width: 300px;
+}
+
+.Field textarea {
+    box-sizing: border-box;
+    background-color: white;
+    width: 310px;
+    height: 100px;
+    max-height: 200px;
+    border: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 3px;
+    padding: 10px;
+    margin-right: 50px;
+    resize: vertical;
+    font-size: 15px;
+}
+
+.Button {
+    width: 70px;
+    height: 35px;
+    margin: 15px 0 30px -180px;
+    border-radius: 3px;
+    border: none;
+    background-color: #0095f6;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.Message {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    text-align: left;
+    padding: 10px 50px;
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    -webkit-animation: inAndOut 4s;
+    -moz-animation: inAndOut 4s;
+    -o-animation: inAndOut 4s;
+    animation: inAndOut 4s;
+}
+
+@keyframes inAndOut {
+    0% {
+        bottom: -41px;
+    }
+
+    20% {
+        bottom: 0;
+    }
+
+    80% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: -41px;
+    }
+}
+
+@-o-keyframes inAndOut {
+    0% {
+        bottom: -41px;
+    }
+
+    50% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: -41px;
+    }
+}
+
+@-moz-keyframes inAndOut {
+    0% {
+        bottom: -41px;
+    }
+
+    50% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: -41px;
+    }
+}
+
+@-webkit-keyframes inAndOut {
+    0% {
+        bottom: -41px;
+    }
+
+    50% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: -41px;
+    }
+}

@@ -25,9 +25,10 @@
     border: 0;
     color: rgba(142, 142, 142, 1);
     line-height: inherit;
-    margin: 10px 0;
     padding: 0;
     font-weight: 400;
+    cursor: pointer;
+    width: 160px;
 }
 
 .Time {

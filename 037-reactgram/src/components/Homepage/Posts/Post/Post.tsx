@@ -8,6 +8,7 @@ import ActionsBar from '../../../shared/ActionsBar/ActionsBar';
 import CommentSection from '../../../shared/CommentSection/CommentSection';
 import { userContext } from '../../../../store/user';
 import { useLikes } from '../../../../hooks/useLikes';
+import { useBookmark } from '../../../../hooks/useBookmark';
 
 interface Props {
   caption: string;
@@ -35,11 +36,13 @@ export default function Post(post: Props): ReactElement {
     imageUrl,
     showPost
   } = post;
+
   const { userId } = useContext(userContext);
   const { localLikes, doubleClickToLike, likePost, unlikePost } = useLikes(
     post,
     userId
   );
+  const { localBookmarks, bookmarkPost, unmarkPost } = useBookmark(post);
 
   const openModal = () => {
     showPost(post);
@@ -60,21 +63,25 @@ export default function Post(post: Props): ReactElement {
         >
           {posterName}
         </div>
-        <div className={styles.MoreIcon}>
+        {/* <div className={styles.MoreIcon}>
           <MoreIcon />
-        </div>
+        </div> */}
       </header>
       <div className={styles.ImageContainer} onDoubleClick={doubleClickToLike}>
         <img src={imageUrl} alt="content" />
       </div>
       <ActionsBar
+        likes={localLikes}
         likePost={likePost}
         unlikePost={unlikePost}
         userId={userId}
-        likes={localLikes}
         openModal={openModal}
+        bookmarks={localBookmarks}
+        bookmarkPost={bookmarkPost}
+        unmarkPost={unmarkPost}
+        postId={postId}
       />
-      <CommentSection post={post} likes={localLikes} />
+      <CommentSection post={post} likes={localLikes} openModal={openModal} />
     </article>
   );
 }

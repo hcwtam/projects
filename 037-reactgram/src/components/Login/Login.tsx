@@ -1,10 +1,11 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement, useContext } from 'react';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import { Link } from 'react-router-dom';
 
 import styles from './Login.module.css';
 import { login } from '../../utils/auth';
+import { authContext } from '../../store/auth';
 
 interface Props {}
 
@@ -14,6 +15,8 @@ type FormData = {
 };
 
 export default function Login({}: Props): ReactElement {
+  const { setToken, setUserId } = useContext(authContext);
+
   const initialValues = {
     email: '',
     password: ''
@@ -24,9 +27,11 @@ export default function Login({}: Props): ReactElement {
     password: Yup.string().required('Required')
   });
 
-  const onSubmit = (values: FormData) => {
+  const onSubmit = async (values: FormData) => {
     console.log('form data', values);
-    login(values);
+    const [token, userId] = await login(values);
+    setToken(token);
+    setUserId(userId);
   };
 
   return (

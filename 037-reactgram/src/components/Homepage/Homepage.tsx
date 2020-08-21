@@ -11,7 +11,7 @@ interface Props {}
 export default function Homepage({}: Props): ReactElement {
   const userData = useContext(userContext);
 
-  const { avatarUrl, username } = userData || false;
+  const { avatarUrl, username } = userData;
   return (
     <>
       <Navbar avatarUrl={avatarUrl} />
