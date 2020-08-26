@@ -1,0 +1,118 @@
+@import url("./assets/font/stylesheet.css");
+
+:root {
+  --turquoise: #07b1a9;
+  --darkgrey: #121c42;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Euclid Circular B', 'Roboto',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--darkgrey);
+  font-weight: 400;
+}
+
+h1 {
+  color: var(--turquoise);
+  font-size: 5rem;
+  font-weight: 600;
+  margin: 40px 0;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(180deg, #5b94ff 41%, #5d75ff 74%);
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 15px;
+}
+
+h5 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 1rem;
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+
+strong {
+  color: black;
+  font-weight: inherit;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  position: relative;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  cursor: pointer;
+  color: var(--turquoise);
+}
+
+a:hover {
+  color: var(--turquoise);
+  outline: currentcolor none 0px;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+a::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 1px;
+  position: relative;
+  bottom: 2px;
+  background-color: var(--turquoise);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  opacity: 0.5;
+}
+
+i {
+  font-size: 28px;
+}
+
+.dark {
+  background-color: #171C28;
+  color: rgb(206, 206, 206);
+}
+
+.dark strong,
+.dark h3 {
+  color: white !important
+}
+
+.App {
+  width: 100%;
+  transition: all 0.3s ease-out
+}

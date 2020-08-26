@@ -1,0 +1,22 @@
+[{
+        "title": "Typing Training",
+        "description": "Improve your typing speed and accuracy by training everyday. Displays typing speed and error counts for each training session.",
+        "technologies": ["React", "SWR", "Typescript"],
+        "github": "https://github.com/hcwtam/projects/tree/master/031-typing-practice",
+        "link": ""
+    },
+    {
+        "title": "Fitness Tracker",
+        "description": "An application that allows users to record their workout progress and displays progression graphically.",
+        "technologies": ["React", "Redux", "Firebase"],
+        "github": "https://github.com/hcwtam/projects/tree/master/024-workout-tracker",
+        "link": ""
+    },
+    {
+        "title": "Portfolio",
+        "description": "A portfolio for introducing myself and showcasing my projects.",
+        "technologies": ["React", "Typescript"],
+        "github": "https://github.com/hcwtam/projects/tree/master/038-portfolio",
+        "link": ""
+    }
+]
