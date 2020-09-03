@@ -84,24 +84,28 @@ export default function PostModal({
           />
           {replies}
         </div>
-        <ActionsBar
-          likes={localLikes}
-          likePost={likePost}
-          unlikePost={unlikePost}
-          userId={userId}
-          bookmarks={localBookmarks}
-          bookmarkPost={bookmarkPost}
-          unmarkPost={unmarkPost}
-          postId={postId}
-          focusInput={() => inputRef.current.focus()}
-        />
-        <div className={styles.Likes}>
-          {localLikes && localLikes.length
-            ? likesText
-            : 'Be first to like this'}
+        <div className={styles.ActionBar}>
+          <ActionsBar
+            likes={localLikes}
+            likePost={likePost}
+            unlikePost={unlikePost}
+            userId={userId}
+            bookmarks={localBookmarks}
+            bookmarkPost={bookmarkPost}
+            unmarkPost={unmarkPost}
+            postId={postId}
+            focusInput={() => inputRef.current.focus()}
+          />
+          <div className={styles.Likes}>
+            {localLikes && localLikes.length
+              ? likesText
+              : 'Be first to like this'}
+          </div>
+          <div className={styles.Time}>{postTime}</div>
         </div>
-        <div className={styles.Time}>{postTime}</div>
-        <CommentInput addComment={addComment} inputRef={inputRef} />
+        <div className={styles.CommentInput}>
+          <CommentInput addComment={addComment} inputRef={inputRef} />
+        </div>
       </div>
     </Modal>
   );

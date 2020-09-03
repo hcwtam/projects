@@ -49,15 +49,15 @@ export default function Navbar({ avatarUrl }: Props): ReactElement {
             >
               <HomeIcon isActive={isActive === '/'} />
             </Link>
-            <Link to="/" onClick={() => setIsActive('explore')}>
+            {/* <Link to="/" onClick={() => setIsActive('explore')}>
               <ExploreIcon isActive={isActive === 'explore'} />
-            </Link>
-            <div
+            </Link> */}
+            {/* <div
               onClick={() => setIsActive('heart')}
               style={{ cursor: 'pointer' }}
             >
               <HeartIcon isActive={isActive === 'heart'} />
-            </div>
+            </div> */}
             <div className={styles.Upload}>
               <img src={uploadIcon} alt="uploadIcon" />
               <Upload avatarUrl={avatarUrl} />

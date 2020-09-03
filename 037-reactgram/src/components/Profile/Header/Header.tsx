@@ -69,13 +69,18 @@ export default function Header({
 
   const userButton = sameUser ? (
     <>
-      <Link to="/settings">Edit Profile</Link>
+      <Link to="/settings" className={styles.Edit}>
+        Edit Profile
+      </Link>
       <OptionsIcon />
     </>
   ) : isFollowing ? (
-    <button onClick={unfollow}>Following</button>
+    <button className={styles.Follow} onClick={unfollow}>
+      Following
+    </button>
   ) : (
     <button
+      className={styles.Follow}
       onClick={follow}
       style={{ backgroundColor: '#0095f6', color: 'white' }}
     >

@@ -36,7 +36,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 220px;
+    width: 150px;
 }
 
 .Icons a {
@@ -54,7 +54,7 @@
 .Active {
     position: absolute;
     top: 3.5px;
-    right: 11px;
+    right: 14px;
     width: 28px;
     height: 28px;
     border: 1px solid black;
@@ -101,4 +101,10 @@
 .Logout {
     border-top: 1px solid rgb(201, 201, 201);
 
+}
+
+@media (max-width: 300px) {
+    .Active {
+        display: none;
+    }
 }

@@ -4,3 +4,9 @@
     margin: 0 auto;
     padding-top: 85px;
 }
+
+@media (max-width: 614px) {
+    .Homepage {
+        padding-top: 50px;
+    }
+}

@@ -192,3 +192,53 @@
         bottom: -41px;
     }
 }
+
+@media (max-width: 800px) {
+    .Settings {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .Side {
+        display: none;
+    }
+
+    .Form {
+        width: 100%;
+        max-width: 600px;
+        justify-content: left;
+        padding-left: 3%;
+    }
+
+    .Field {
+        flex-direction: column;
+        width: 90vw;
+        max-width: 400px;
+    }
+
+    .Field input,
+    .Field textarea {
+        width: 100%;
+        box-sizing: border-box;
+        margin-right: 10px;
+    }
+
+    .Form form {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        position: relative;
+        padding-bottom: 40px;
+    }
+
+    .Form .Button {
+        margin-left: 0;
+        justify-self: left;
+        align-self: left;
+        position: absolute;
+        left: 0px;
+        top: 520px;
+    }
+}
+
+@media (max-width: 460px) {}

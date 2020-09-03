@@ -1,5 +1,5 @@
 .ActionsBar {
-    height: 30px;
+    min-height: 30px;
     display: flex;
     align-items: center;
     padding: 0 8px;

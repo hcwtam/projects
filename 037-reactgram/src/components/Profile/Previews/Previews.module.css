@@ -34,3 +34,9 @@
     gap: 49px;
     margin-bottom: 80px;
 }
+
+@media (max-width: 720px) {
+    .Previews {
+        gap: 2px;
+    }
+}
