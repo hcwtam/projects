@@ -8,7 +8,7 @@ import Card from './Card/Card';
 
 interface Props {}
 
-export default function Projects({}: Props): ReactElement {
+export default function Projects(): ReactElement {
   const cards = other.map(
     ({ title, description, technologies, github, link }) => (
       <Card
@@ -27,7 +27,7 @@ export default function Projects({}: Props): ReactElement {
       <h3>My Projects</h3>
       <div className={`${styles.Project} ${styles.Project1}`}>
         <div className={styles.ImageContainer}>
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a href="example.com" target="_blank" rel="noopener noreferrer">
             <img src={reactgram} alt="project 1" />
           </a>
         </div>
@@ -60,7 +60,7 @@ export default function Projects({}: Props): ReactElement {
             >
               <i className="fab fa-github" />
             </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="example.com" target="_blank" rel="noopener noreferrer">
               <i className="fas fa-external-link-alt" />
             </a>
           </div>
@@ -69,7 +69,7 @@ export default function Projects({}: Props): ReactElement {
       <div className={`${styles.Project} ${styles.Project2}`}>
         <div className={styles.Description}>
           <h4>
-            <a href="">Fruity</a>
+            <a href="example.com">Fruity</a>
           </h4>
           <p>
             An e-commerce application for online grcoery shopping. Includes an
@@ -90,13 +90,13 @@ export default function Projects({}: Props): ReactElement {
             >
               <i className="fab fa-github" />
             </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="example.com" target="_blank" rel="noopener noreferrer">
               <i className="fas fa-external-link-alt" />
             </a>
           </div>
         </div>
         <div className={styles.ImageContainer}>
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a href="example.com" target="_blank" rel="noopener noreferrer">
             <img src={fruity} alt="project 2" />
           </a>
         </div>
