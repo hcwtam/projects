@@ -1,8 +1,8 @@
-import React, { useEffect, useCallback } from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import React, { useEffect, useCallback, useState } from 'react';
+import { Route, Switch, Redirect, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
-import { authCheckState, fetchItems } from './actions';
+import { authCheckState, fetchItems, resetCart } from './actions';
 import './App.css';
 import Homepage from './components/Homepage/Homepage';
 import Shop from './components/Shop/Shop';
@@ -14,6 +14,7 @@ import ScrolltoTop from './components/utils/ScrolltoTop';
 
 function App() {
   const dispatch = useDispatch();
+
   const onTryAutoLogin = useCallback(() => {
     dispatch(authCheckState());
   }, [dispatch]);
@@ -36,7 +37,7 @@ function App() {
         <Route path="/shop" component={Shop} />
         <Route path="/product" component={Product} />
         <Route path="/checkout" component={Checkout} />
-        <Route path="/success" component={Success} />
+        <Route exact path="/success" component={Success} />
         <Route path="/orders" component={Orders} />
         <Redirect to="/shop" />
       </Switch>

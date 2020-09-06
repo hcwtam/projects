@@ -50,7 +50,6 @@ function DeliveryForm({ submitted }) {
   }, [token, userId]);
 
   const onSubmit = (values) => {
-    console.log('form data', values);
     dispatch(addUserDetail(values));
     if (userId && token) dispatch(uploadUserDetail(values, userId, token));
     submitted();

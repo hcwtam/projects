@@ -16,12 +16,14 @@ function Success() {
   const totalPrice = useSelector((state: RootState) => state.order.totalPrice);
   const userId = useSelector((state: RootState) => state.auth.userId);
 
+  const [localSuccess] = useState(success);
+
   const dispatch = useDispatch();
   const history = useHistory();
 
   useEffect(() => {
-    if (!success) history.push('/shop');
-  }, [success, history]);
+    if (!localSuccess) history.push('/shop');
+  }, [localSuccess, history]);
 
   useEffect(() => {
     if (!summary) {

@@ -44,3 +44,9 @@
     margin-left: 23px;
     width: 120px;
 }
+
+@media (max-width: 460px) {
+    .form {
+        width: 44.5vw;
+    }
+}

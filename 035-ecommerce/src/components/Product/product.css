@@ -68,3 +68,10 @@
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
+@media (max-width: 770px) {
+  .Collapsible {
+    width: 93vw;
+    margin-left: 10px;
+  }
+}

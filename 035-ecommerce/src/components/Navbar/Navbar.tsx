@@ -133,6 +133,9 @@ function Navbar({ white }: AppProps) {
         style={modalStyles}
       >
         {loading ? <Spinner /> : showLogin ? loginForm : signupForm}
+        <div className={styles.Close} onClick={() => setOpenModal(false)}>
+          <i className="fa fa-times" aria-hidden="true" />
+        </div>
       </Modal>
     </>
   );

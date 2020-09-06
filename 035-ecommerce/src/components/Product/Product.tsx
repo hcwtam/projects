@@ -114,23 +114,27 @@ function Product() {
               <img src={url} alt={item.name} />
             </div>
             <div className={styles.detailContainer}>
-              <h1>{item.name[0].toUpperCase() + item.name.slice(1)}</h1>
-              <div className={styles.rating}>
-                <i className="fa fa-star" aria-hidden="true" />
-                <i className="fa fa-star" aria-hidden="true" />
-                <i className="fa fa-star" aria-hidden="true" />
-                <i className="fa fa-star" aria-hidden="true" />
-                <i className="fa fa-star" aria-hidden="true" />
+              <div className={styles.nameContainer}>
+                <h1>{item.name[0].toUpperCase() + item.name.slice(1)}</h1>
+                <div className={styles.rating}>
+                  <i className="fa fa-star" aria-hidden="true" />
+                  <i className="fa fa-star" aria-hidden="true" />
+                  <i className="fa fa-star" aria-hidden="true" />
+                  <i className="fa fa-star" aria-hidden="true" />
+                  <i className="fa fa-star" aria-hidden="true" />
+                </div>
               </div>
-              <h3>{`$${item.price.toFixed(2)}`}</h3>
-              <div className={styles.quantity}>
-                <Quantity
-                  id={item.id}
-                  name={item.name}
-                  price={item.price}
-                  imageURL={item.imageURL}
-                  notify={() => {}}
-                />
+              <div className={styles.priceContainer}>
+                <h3>{`$${item.price.toFixed(2)}`}</h3>
+                <div className={styles.quantity}>
+                  <Quantity
+                    id={item.id}
+                    name={item.name}
+                    price={item.price}
+                    imageURL={item.imageURL}
+                    notify={() => {}}
+                  />
+                </div>
               </div>
               <hr />
               <article>

@@ -8,7 +8,7 @@
 }
 
 .Success h1 {
-    margin-bottom: 50px;
+    margin: 0 20px 50px;
 }
 
 .flexContainer {
@@ -20,9 +20,14 @@
 }
 
 .links {
-    margin: 50px auto;
-    width: 500px;
+    margin: 50px auto 100px;
+    width: 90vw;
+    max-width: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.links button {
+    margin: 0;
 }

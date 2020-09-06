@@ -45,7 +45,8 @@
 }
 
 .nutrition {
-    width: 370px;
+    width: 95%;
+    max-width: 370px;
     margin: 30px 0;
 }
 
@@ -60,4 +61,52 @@
 .Product section {
     width: 770px;
     margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+    .containers {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .imageContainer {
+        width: 95%;
+        padding: 10% 0;
+        margin: 0;
+        margin-top: 180px;
+    }
+
+    .imageContainer img {
+        max-width: 300px;
+    }
+
+    .detailContainer {
+        width: 100%;
+        margin: 0;
+        padding-left: 10px;
+    }
+
+    .nameContainer {
+        position: absolute;
+        top: 80px;
+
+    }
+
+    .priceContainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .quantity {
+        margin: 0;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .detailContainer hr {
+        margin-right: 10px;
+    }
 }

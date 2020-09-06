@@ -97,3 +97,17 @@ a:hover {
   color: rgb(36, 44, 59);
   text-decoration: underline;
 }
+
+@media (max-width: 700px) {
+  .ReactModal__Content {
+    width: 90vw !important;
+  }
+
+  .ReactModal__Content input {
+    width: 100% !important;
+  }
+
+  .ReactModal__Content button {
+    margin: 10px 0;
+  }
+}
