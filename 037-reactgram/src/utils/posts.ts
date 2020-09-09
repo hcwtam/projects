@@ -111,7 +111,9 @@ export const calcTimeIntervalShorthand = (timestamp: string) => {
       const roundedHours = Math.floor(timeDiffInHours);
       return `${roundedHours}h ago`;
     case timeDiffInHours >= 24:
-      const day = new Date(timestamp).toString().split(' ')[2];
+      console.log(timeDiffInHours);
+
+      const day = Math.floor(timeDiffInHours / 24);
       return `${day}d`;
     default:
       throw new Error();
