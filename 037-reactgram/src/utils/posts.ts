@@ -66,7 +66,6 @@ export const extractPosts = (r: PostsData) => {
   for (let key in r) {
     posts.push({ ...r[key], postId: key });
   }
-  console.log(posts);
 
   return posts;
 };
@@ -111,8 +110,6 @@ export const calcTimeIntervalShorthand = (timestamp: string) => {
       const roundedHours = Math.floor(timeDiffInHours);
       return `${roundedHours}h ago`;
     case timeDiffInHours >= 24:
-      console.log(timeDiffInHours);
-
       const day = Math.floor(timeDiffInHours / 24);
       return `${day}d`;
     default:
