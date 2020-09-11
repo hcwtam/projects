@@ -14,7 +14,7 @@ function CheckoutItem(props) {
     <div className={styles.CheckoutItem}>
       <div className={styles.description}>
         <div className={styles.imageContainer}>
-          <img src={url} alt="orange" />
+          {url ? <img src={url} alt={name} /> : null}
         </div>
         <div>
           <strong>{name[0].toUpperCase() + name.slice(1)}</strong>

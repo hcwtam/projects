@@ -3,6 +3,7 @@
     flex-flow: column;
     justify-content: center;
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0) 100%);
+    overflow-x: hidden;
 }
 
 .containers {

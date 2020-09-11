@@ -1,5 +1,3 @@
-import { fetchOrdersStart } from './order';
-
 export enum ActionTypes {
   authStart = 'AUTH_START',
   authSuccess = 'AUTH_SUCCESS',

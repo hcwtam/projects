@@ -22,7 +22,7 @@ function Card(props) {
       onClick={() => history.push(`/product/${id}`, props)}
     >
       <div className={styles.imageContainer}>
-        <img src={url} alt={name} />
+        {url ? <img src={url} alt={name} /> : null}
       </div>
       <div className={styles.name}>{name[0].toUpperCase() + name.slice(1)}</div>
       <div>{shortDescription}</div>

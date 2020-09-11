@@ -111,7 +111,7 @@ function Product() {
         <>
           <div className={styles.containers}>
             <div className={styles.imageContainer}>
-              <img src={url} alt={item.name} />
+              {url ? <img src={url} alt={item.name} /> : null}
             </div>
             <div className={styles.detailContainer}>
               <div className={styles.nameContainer}>

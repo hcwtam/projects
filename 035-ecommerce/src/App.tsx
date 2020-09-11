@@ -1,8 +1,8 @@
-import React, { useEffect, useCallback, useState } from 'react';
-import { Route, Switch, Redirect, useLocation } from 'react-router-dom';
+import React, { useEffect, useCallback } from 'react';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
-import { authCheckState, fetchItems, resetCart } from './actions';
+import { authCheckState, fetchItems } from './actions';
 import './App.css';
 import Homepage from './components/Homepage/Homepage';
 import Shop from './components/Shop/Shop';

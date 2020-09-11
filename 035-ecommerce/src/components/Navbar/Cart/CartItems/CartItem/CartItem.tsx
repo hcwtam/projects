@@ -17,7 +17,7 @@ function CartItem(props) {
     <Tippy content={name[0].toUpperCase() + name.slice(1)}>
       <div className={styles.CartItem}>
         <div className={styles.imageContainer}>
-          <img src={url} alt={name} />
+          {url ? <img src={url} alt={name} /> : null}
         </div>
         <div>
           <button onClick={() => dispatch(subtractFromCart(id, price))}>

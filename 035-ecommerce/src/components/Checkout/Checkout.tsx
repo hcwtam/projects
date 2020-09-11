@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-import { CardElement } from '@stripe/react-stripe-js';
 
 import styles from './Checkout.module.css';
 import Navbar from '../Navbar/Navbar';
@@ -45,10 +44,6 @@ function Checkout() {
     />
   ));
 
-  const cardElementOptions = {
-    hidePostalCode: true
-  };
-
   return (
     <div className={styles.Checkout}>
       <Navbar />
@@ -80,9 +75,6 @@ function Checkout() {
               <h4>Total</h4>
               <h5>Item(s) price</h5>
               <div>{`$${totalPrice.toFixed(2)}`}</div>
-            </div>
-            <div className={styles.stripeContainer}>
-              <CardElement options={cardElementOptions} />
             </div>
             <button disabled={loading} onClick={paymentHandler}>
               Place order

@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@stripe/react-stripe-js": "^1.1.2",
-    "@stripe/stripe-js": "^1.8.0",
     "@testing-library/jest-dom": "^5.11.2",
     "@testing-library/react": "^10.4.7",
     "@testing-library/user-event": "^12.1.0",
@@ -30,12 +28,11 @@
     "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
     "react-router-redux": "^5.0.0-alpha.9",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^3.4.3",
     "react-table": "^7.3.3",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "rodal": "^1.8.1",
-    "stripe": "^8.81.0",
     "typescript": "^3.9.7",
     "yup": "^0.29.2"
   },
