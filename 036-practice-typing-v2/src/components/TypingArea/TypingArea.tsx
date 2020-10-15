@@ -59,20 +59,23 @@ export default function TypingArea({}: Props): ReactElement {
     fetcher
   );
 
-  console.log(data);
-
   useEffect(() => {
     if (data) {
-      if (data[index].text === input && index < data.length - 1) {
-        setIndex(index + 1);
-        setInput('');
-      }
       const shuffleData = [...data];
       shuffleArray(shuffleData);
       setquotes(shuffleData);
       setShouldFetch(false);
     }
   }, [input, index, data]);
+
+  useEffect(() => {
+    if (quotes) {
+      if (quotes[index].text === input && index < quotes.length - 1) {
+        setIndex(index + 1);
+        setInput('');
+      }
+    }
+  }, [input, index, quotes]);
 
   if (error) return <div>An error has occurred:{error.message}</div>;
   if (!quotes) return <div>Loading...</div>;
